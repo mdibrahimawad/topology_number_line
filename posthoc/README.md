@@ -59,8 +59,8 @@ With all required saved inputs restored and paths configured:
 The shape runner also accepts `--limit` and `--only` for a selected subset. Such runs are partial and must not be reported as the entire inventory. Compatible saved fits are reused using input hashes and fit-version checks. The regular-template study has its own tests:
 
 ```bash
-.venv/bin/python -m pytest -q posthoc/work/geometric_shapes/test_fit.py \
-  posthoc/work/geometric_shapes/test_templates.py
+.venv/bin/python posthoc/work/geometric_shapes/test_templates.py
+.venv/bin/python posthoc/work/geometric_shapes/test_fit.py
 ```
 
 Fit parameters and template definitions live in `geometric_shapes/fit.py` and `templates.py`. These are scientific settings, not generic runtime switches. PCA/template descriptions concern the projected clouds; original-space neighbor retention and distortion diagnostics state how much geometry survives the projection. A template match is not proof that the full hidden representation is a regular solid.

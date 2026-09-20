@@ -44,6 +44,8 @@ Recorded completion: the three full-range representation studies and the six-con
 Python 3.11/3.12 environments were used. Modal builds its own pinned Linux images; the local environment is for launch tooling, synthetic tests, and saved-data analysis.
 
 ```bash
+git clone https://github.com/mdibrahimawad/topology_number_line.git
+cd topology_number_line
 python3 -m venv .venv
 .venv/bin/python -m pip install -r requirements-multimodel.txt
 # Needed by the legacy analysis and L27/L28 helper:
