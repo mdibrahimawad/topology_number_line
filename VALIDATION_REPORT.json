@@ -1,0 +1,13 @@
+{
+  "security_check": {
+    "passed": true,
+    "issues": []
+  },
+  "quality_check": {
+    "passed": true,
+    "issues": []
+  },
+  "repo_sha256_sample": {
+    "modal_app.py": "be6f29ab042e2779463c6969fdba9698f55f68ed463255c76c25e71332f9893b"
+  }
+}

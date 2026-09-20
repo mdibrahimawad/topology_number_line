@@ -1,0 +1,104 @@
+{
+  "input_directory": "/Users/mohammed.awad/Documents/numberline_zigzag_modal_FINAL/results/main_final/main/llm360-crystal/run_00",
+  "input_sha256": {
+    "hidden_states.npz": "3cc2b9795e08fbb643682dde118aa19b7be1f18c35a59ad8895d029886d29bcb",
+    "prompts.json": "d6a375b9063dcc98c8849fdd1d2028134adca5cede2f65835ff8b62fba8b3f3d",
+    "extraction_diagnostics.json": "330701ae6ccc7df5a24f1d17abd9f0c527e7bd8e1f18123facf0780a5d6bab51",
+    "pca_layer_metrics.csv": "26e7d3f954411641626f7b42e6fa9c1953c1d464fcff8f994d49d52e55a6250a"
+  },
+  "shape": [
+    33,
+    120,
+    4096
+  ],
+  "dtype": "float32",
+  "metadata_exact_positional_match": true,
+  "groups": [
+    {
+      "group": "G1",
+      "n": 30,
+      "min": 1,
+      "max": 39,
+      "unique_targets": 21
+    },
+    {
+      "group": "G2",
+      "n": 30,
+      "min": 82,
+      "max": 119,
+      "unique_targets": 22
+    },
+    {
+      "group": "G3",
+      "n": 30,
+      "min": 982,
+      "max": 1018,
+      "unique_targets": 18
+    },
+    {
+      "group": "G4",
+      "n": 30,
+      "min": 9983,
+      "max": 10018,
+      "unique_targets": 22
+    }
+  ],
+  "versions": {
+    "numpy": "2.5.2",
+    "scipy": "1.18.0",
+    "sklearn": "1.9.0",
+    "pandas": "2.3.3",
+    "matplotlib": "3.11.1",
+    "tokenizers": "0.23.2"
+  },
+  "layer_indexing": "Direct saved indices 27 and 28; index 0 is embedding output.",
+  "pca": "PCA(n_components=2, svd_solver=full) on unscaled saved float32 X; deterministic full SVD. Each PC1 sign oriented independently to nonnegative Spearman.",
+  "knn": "NearestNeighbors(n_neighbors=4, metric=euclidean).fit(X).kneighbors() with X omitted; four non-self neighbors. Original float32 input, no scaling.",
+  "original_configuration": {
+    "alias": "llm360-crystal",
+    "model_id": "LLM360/Crystal",
+    "trust_remote_code": true,
+    "tokenizer_use_fast": true,
+    "dtype": "bfloat16",
+    "gpu": "L40S",
+    "revision": null
+  },
+  "original_prompt_method": {
+    "groups": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "samples_per_group": 30,
+    "num_examples": 3,
+    "context": "random",
+    "upper_bound": 10000,
+    "prepend_bos": false
+  },
+  "tokenizer": {
+    "repository": "IFM/Crystal",
+    "revision": "34fc9cd58acd87002560379a95b432147cc9135a",
+    "auto_map": {
+      "AutoTokenizer": [
+        null,
+        "LLM360/CrystalCoder--tokenization_crystalcoder_fast.CrystalCoderTokenizerFast"
+      ]
+    },
+    "wrapper_revision": "34fc9cd58acd87002560379a95b432147cc9135a",
+    "sha256": {
+      "tokenization_crystalcoder_fast.py": "d8fa4edde1b2b022e93514b6e59da68c3346ed6d5eb855b59c3eb1708c65ff5a",
+      "tokenizer_config.json": "9ce5cf84759e59cd3ecd63a2602ac130bcf3a63b7cdd76b3c24c2ae02aaf71e2",
+      "special_tokens_map.json": "77650f68e1bb047e9264ea447114e94cded61905308546bd5439062b86572ed9",
+      "tokenizer.json": "c61adcb4e52988e4ee38ad9871e1f4e43ab128b0b5191225d307c2d022ca9569",
+      "repository_metadata.json": "803418310e03adcc87415d8e43a2fec03600794133f1b2cf41cadb59bb4b9768",
+      "wrapper_repository_metadata.json": "803418310e03adcc87415d8e43a2fec03600794133f1b2cf41cadb59bb4b9768",
+      "original_auto_map_wrapper.py": "d8fa4edde1b2b022e93514b6e59da68c3346ed6d5eb855b59c3eb1708c65ff5a"
+    },
+    "implementation": "tokenizers.Tokenizer backend; inspected CrystalCoderTokenizerFast wrapper has no extra text preprocessing and adds neither BOS nor EOS. Backend identity postprocessor verified.",
+    "historical_limit": "Experiment revision is null; tokenizer hash was not archived. Retrieved pinned assets match the recorded class and all 12 saved final-token diagnostics, but historical byte identity cannot be proven.",
+    "prefix_alignment_passes": 120,
+    "saved_diagnostic_passes": 12,
+    "isolated_contextual_matches": 0
+  }
+}

@@ -1,0 +1,31 @@
+# Local environments, caches and credentials
+.venv*/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.DS_Store
+# Generated data and downloaded dependencies. Selected immutable fixtures and
+# frozen source snapshots under results/ are explicitly tracked exceptions.
+/results/
+/posthoc/outputs/
+*.zip
+*.tar.gz
+*.safetensors
+*.pt
+*.pth
+/crystal_L27_L28_hypothesis_test/python_deps/
+/crystal_L27_L28_hypothesis_test/tokenizer/
+/crystal_L27_L28_hypothesis_test/*.csv
+/crystal_L27_L28_hypothesis_test/*.json
+/crystal_L27_L28_hypothesis_test/*.png
+/crystal_L27_L28_hypothesis_test/*.svg
+/crystal_L27_L28_hypothesis_test/*.log
+/crystal_L27_L28_hypothesis_test/analysis_details.txt

@@ -1,0 +1,2 @@
+# Separate future Modal image; identical native/scientific versions to tested local environment.
+-r requirements-crystal-fullrange.txt

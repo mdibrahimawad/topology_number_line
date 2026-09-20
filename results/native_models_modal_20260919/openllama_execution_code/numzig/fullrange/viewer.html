@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Crystal numerical representations</title><script src="plotly.min.js"></script>
+<style>
+body{font:16px system-ui,sans-serif;margin:0;color:#142333;background:#f5f7fa}header{padding:18px 24px;background:white;border-bottom:1px solid #ccd4dd}h1{font-size:22px;margin:0 0 8px}#controls{display:flex;gap:18px;flex-wrap:wrap;align-items:end;margin-top:14px}label{display:flex;flex-direction:column;gap:5px;font-size:14px}select,input,button{font:inherit;padding:7px;border:1px solid #9aaaba;border-radius:4px;background:white}button{cursor:pointer}main{display:grid;grid-template-columns:minmax(0,1fr) 320px}#plot{height:76vh;min-height:450px}aside{padding:20px;background:white;border-left:1px solid #ccd4dd}#status{padding:8px 24px}#selection{white-space:pre-wrap;line-height:1.6}small{line-height:1.5;display:block;color:#435365}.warning{color:#9b3400;font-weight:bold}@media(max-width:850px){main{display:block}aside{border:0}#plot{height:65vh}}
+</style></head><body>
+<header><h1>Crystal · numerical representations</h1><small>Saved global PCA coordinates. Exact k=4 neighbors come from original hidden vectors. PCA frames are independently fitted across layers.</small>
+<div id="controls"><label>Returned level<select id="layer"></select></label><form id="search"><label>Exact target<input id="target" type="number" min="1" max="10000" value="1000" required></label><button type="submit">Select target</button></form>
+<label>Color<select id="color"><option value="digit">Leading decimal digit</option><option value="linear">Target · linear</option><option value="log">Target · log10</option></select></label>
+<label>Edges<select id="edges"><option value="selected">Selected point’s 4 outgoing</option><option value="hidden">Hidden</option><option value="all">All union edges</option></select></label></div></header>
+<div id="status" role="status" aria-live="polite">Loading saved results…</div>
+<main><div id="plot" aria-label="Interactive PCA graph"></div><aside><h2>Selected point</h2><div id="selection" aria-live="polite">Select a target or click a point.</div><small>Orange diamonds mark the four outgoing neighbors. These differ from all incident union edges; union degree can exceed four. Black star marks the selected target.</small><p><small>No PCA, neighbor search, or model inference runs in this viewer. All targets are retained. Degenerate layers have no meaningful PCA or graph.</small></p></aside></main>
+<script>
+'use strict';
+let meta, active, selected=null, request=0, byId;
+const $=id=>document.getElementById(id), plot=$('plot');
+async function json(path){const r=await fetch(path);if(!r.ok)throw Error(`${path}: HTTP ${r.status}`);return r.json();}
+function pointTrace(indices, options={}) {
+ return {type:'scattergl', mode:'markers', x:indices.map(i=>active.scores[i][0]), y:indices.map(i=>active.scores[i][1]),
+ customdata:indices.map(i=>[meta.rows[i].target,meta.rows[i].point_id,meta.rows[i].leading_digit,meta.rows[i].digit_count]),
+ hovertemplate:'Target %{customdata[0]}<br>Point ID %{customdata[1]}<br>Leading digit %{customdata[2]}<br>Digit length %{customdata[3]}<extra></extra>',showlegend:false,...options};
+}
+async function draw(){
+ if(!active)return;
+ const row=selected===null?null:byId.get(selected), info=$('selection');
+ if(active.status!=='valid'){
+  info.textContent=row===null||row===undefined?'No selected target.':`Target ${meta.rows[row].target}\nPoint ID ${selected}\nPCA and neighbors unavailable at this degenerate level.`;
+  await Plotly.react(plot,[],{annotations:[{text:`Level ${active.layer}: degenerate<br>PCA / neighborhoods unavailable`,showarrow:false,x:.5,y:.5,xref:'paper',yref:'paper'}]});return;
+ }
+ const mode=$('color').value, order=meta.drawing_order;
+ const colors=mode==='digit'?order.map(i=>meta.colors[meta.rows[i].leading_digit-1]):order.map(i=>mode==='log'?Math.log10(meta.rows[i].target):meta.rows[i].target);
+ const marker={size:4,opacity:.8,color:colors};
+ if(mode!=='digit')Object.assign(marker,{colorscale:'Viridis',cmin:mode==='log'?0:1,cmax:mode==='log'?4:10000,showscale:true,colorbar:{title:mode==='log'?'log10 target':'Target'}});
+ let pairs=[], neighbors=[];
+ if(row!==null&&row!==undefined){
+  neighbors=active.neighbors[row].map(id=>byId.get(id));
+  info.textContent=`Target ${meta.rows[row].target}\nPoint ID ${selected}\nLeading digit ${meta.rows[row].leading_digit} · ${meta.rows[row].digit_count} digits\n\n4 outgoing original-space neighbors:\n`+neighbors.map((i,k)=>`${k+1}. ${meta.rows[i].target}  ·  distance ${active.distances[row][k].toPrecision(7)}`).join('\n');
+ }else info.textContent='Select a target or click a point.';
+ if($('edges').value==='all')pairs=active.union_edges.map(([a,b])=>[byId.get(a),byId.get(b)]);
+ else if($('edges').value==='selected'&&row!==null&&row!==undefined)pairs=neighbors.map(i=>[row,i]);
+ let ex=[],ey=[];
+ for(const [a,b] of pairs){ex.push(active.scores[a][0],active.scores[b][0],null);ey.push(active.scores[a][1],active.scores[b][1],null);}
+ const traces=[{type:'scattergl',mode:'lines',x:ex,y:ey,line:{width:$('edges').value==='all'?.4:2,color:$('edges').value==='all'?'rgba(70,85,100,0.13)':'#e28118'},hoverinfo:'skip',showlegend:false}, pointTrace(order,{marker})];
+ if(mode==='digit')meta.colors.forEach((c,i)=>traces.push({type:'scatter',mode:'markers',x:[null],y:[null],marker:{color:c,size:9},name:String(i+1),legendgroup:String(i+1)}));
+ if(neighbors.length)traces.push(pointTrace(neighbors,{marker:{size:12,symbol:'diamond',color:'#ff9d22',line:{width:1,color:'#333'}}}));
+ if(row!==null&&row!==undefined)traces.push(pointTrace([row],{marker:{size:17,symbol:'star',color:'#111'}}));
+ await Plotly.react(plot,traces,{title:`Level ${active.layer} · ${meta.rows.length.toLocaleString()} points · k=4`,
+ xaxis:{title:`PC1 (${(100*active.variance[0]).toFixed(2)}% variance)`}, yaxis:{title:`PC2 (${(100*active.variance[1]).toFixed(2)}% variance)`},
+ legend:{title:{text:'Leading digit'},orientation:'h',y:-.18,itemclick:false,itemdoubleclick:false},margin:{t:60,l:80,r:60,b:100},hovermode:'closest',uirevision:String(active.layer)}, {responsive:true,displaylogo:false});
+}
+async function layer(){const id=++request;const data=await json(`layer_${$('layer').value.padStart(2,'0')}.json`);if(id!==request)return;active=data;await draw();$('status').textContent=(meta.synthetic?'SYNTHETIC VALIDATION ONLY · ':'')+`${meta.experiment} · ${meta.rows.length.toLocaleString()} saved targets`;}
+$('search').addEventListener('submit',async e=>{e.preventDefault();const target=Number($('target').value),id=target-1;if(!Number.isInteger(target)||!byId.has(id)){$('status').textContent='Target is absent from this dataset (smoke datasets contain a subset).';return;}selected=id;await draw();});
+$('layer').addEventListener('change',()=>layer().catch(error));
+$('color').addEventListener('change',()=>draw().catch(error));$('edges').addEventListener('change',()=>draw().catch(error));
+function error(e){$('status').textContent=`Error: ${e.message}. Serve this directory with python -m http.server 8000.`;}
+(async()=>{meta=await json('index.json');byId=new Map(meta.rows.map((r,i)=>[r.point_id,i]));$('layer').replaceChildren(...meta.layers.map(l=>new Option(`Level ${l.layer}${l.status==='valid'?'':' · degenerate'}`,l.layer)));$('layer').value=String((meta.layers.find(l=>l.status==='valid')||meta.layers[0]).layer);await layer();plot.on('plotly_click',async event=>{const d=event.points[0].customdata;if(!d)return;selected=d[1];$('target').value=d[0];await draw();});})().catch(error);
+</script></body></html>

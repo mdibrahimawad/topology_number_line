@@ -1,0 +1,1009 @@
+TASK 1: NPZ keys: ['hidden_states', 'targets', 'group_ids', 'point_ids']
+Shape: (33, 120, 4096) dtype: float32 ; points: 120 ; exact positional metadata alignment: PASS
+Group ranges: [{'group': 'G1', 'n': 30, 'min': 1, 'max': 39, 'unique_targets': 21}, {'group': 'G2', 'n': 30, 'min': 82, 'max': 119, 'unique_targets': 22}, {'group': 'G3', 'n': 30, 'min': 982, 'max': 1018, 'unique_targets': 18}, {'group': 'G4', 'n': 30, 'min': 9983, 'max': 10018, 'unique_targets': 22}]
+First five records: [
+  {
+    "point_id": 0,
+    "group": 1,
+    "target": 8.0,
+    "prompt": "1040=1040,6304=6304,6252=6252,8="
+  },
+  {
+    "point_id": 1,
+    "group": 1,
+    "target": 2.0,
+    "prompt": "9763=9763,7668=7668,8669=8669,2="
+  },
+  {
+    "point_id": 2,
+    "group": 1,
+    "target": 18.0,
+    "prompt": "4119=4119,9064=9064,188=188,18="
+  },
+  {
+    "point_id": 3,
+    "group": 1,
+    "target": 16.0,
+    "prompt": "1876=1876,8797=8797,4371=4371,16="
+  },
+  {
+    "point_id": 4,
+    "group": 1,
+    "target": 15.0,
+    "prompt": "5573=5573,1827=1827,4808=4808,15="
+  }
+]
+TASK 6: contextual tokenizer test:  point_id  target  first_completion_token_id           full_completion_token_ids
+        0       8                      29947                             [29947]
+        1       2                      29906                             [29906]
+        2      18                      29896                      [29896, 29947]
+        3      16                      29896                      [29896, 29953]
+        4      15                      29896                      [29896, 29945]
+        5       9                      29929                             [29929]
+        6       7                      29955                             [29955]
+        7      35                      29941                      [29941, 29945]
+        8       6                      29953                             [29953]
+        9      38                      29941                      [29941, 29947]
+       10      28                      29906                      [29906, 29947]
+       11       3                      29941                             [29941]
+       12       2                      29906                             [29906]
+       13       6                      29953                             [29953]
+       14      14                      29896                      [29896, 29946]
+       15      15                      29896                      [29896, 29945]
+       16      33                      29941                      [29941, 29941]
+       17      39                      29941                      [29941, 29929]
+       18       2                      29906                             [29906]
+       19      36                      29941                      [29941, 29953]
+       20      13                      29896                      [29896, 29941]
+       21      35                      29941                      [29941, 29945]
+       22      27                      29906                      [29906, 29955]
+       23      15                      29896                      [29896, 29945]
+       24      29                      29906                      [29906, 29929]
+       25      38                      29941                      [29941, 29947]
+       26      18                      29896                      [29896, 29947]
+       27       1                      29896                             [29896]
+       28      11                      29896                      [29896, 29896]
+       29      28                      29906                      [29906, 29947]
+       30     101                      29896               [29896, 29900, 29896]
+       31      97                      29929                      [29929, 29955]
+       32      89                      29947                      [29947, 29929]
+       33      93                      29929                      [29929, 29941]
+       34     101                      29896               [29896, 29900, 29896]
+       35      86                      29947                      [29947, 29953]
+       36      85                      29947                      [29947, 29945]
+       37     104                      29896               [29896, 29900, 29946]
+       38      86                      29947                      [29947, 29953]
+       39     102                      29896               [29896, 29900, 29906]
+       40     102                      29896               [29896, 29900, 29906]
+       41     118                      29896               [29896, 29896, 29947]
+       42      96                      29929                      [29929, 29953]
+       43      82                      29947                      [29947, 29906]
+       44     109                      29896               [29896, 29900, 29929]
+       45     114                      29896               [29896, 29896, 29946]
+       46      87                      29947                      [29947, 29955]
+       47     104                      29896               [29896, 29900, 29946]
+       48      85                      29947                      [29947, 29945]
+       49     115                      29896               [29896, 29896, 29945]
+       50      98                      29929                      [29929, 29947]
+       51     119                      29896               [29896, 29896, 29929]
+       52     103                      29896               [29896, 29900, 29941]
+       53     116                      29896               [29896, 29896, 29953]
+       54      92                      29929                      [29929, 29906]
+       55      84                      29947                      [29947, 29946]
+       56      82                      29947                      [29947, 29906]
+       57      94                      29929                      [29929, 29946]
+       58      98                      29929                      [29929, 29947]
+       59      85                      29947                      [29947, 29945]
+       60     994                      29929               [29929, 29929, 29946]
+       61     986                      29929               [29929, 29947, 29953]
+       62    1004                      29896        [29896, 29900, 29900, 29946]
+       63     997                      29929               [29929, 29929, 29955]
+       64    1009                      29896        [29896, 29900, 29900, 29929]
+       65    1003                      29896        [29896, 29900, 29900, 29941]
+       66     990                      29929               [29929, 29929, 29900]
+       67    1003                      29896        [29896, 29900, 29900, 29941]
+       68    1002                      29896        [29896, 29900, 29900, 29906]
+       69     993                      29929               [29929, 29929, 29941]
+       70     997                      29929               [29929, 29929, 29955]
+       71     984                      29929               [29929, 29947, 29946]
+       72    1018                      29896        [29896, 29900, 29896, 29947]
+       73     990                      29929               [29929, 29929, 29900]
+       74    1014                      29896        [29896, 29900, 29896, 29946]
+       75     995                      29929               [29929, 29929, 29945]
+       76     990                      29929               [29929, 29929, 29900]
+       77    1009                      29896        [29896, 29900, 29900, 29929]
+       78    1004                      29896        [29896, 29900, 29900, 29946]
+       79     997                      29929               [29929, 29929, 29955]
+       80    1015                      29896        [29896, 29900, 29896, 29945]
+       81     994                      29929               [29929, 29929, 29946]
+       82    1000                      29896        [29896, 29900, 29900, 29900]
+       83     983                      29929               [29929, 29947, 29941]
+       84     994                      29929               [29929, 29929, 29946]
+       85     982                      29929               [29929, 29947, 29906]
+       86    1000                      29896        [29896, 29900, 29900, 29900]
+       87    1005                      29896        [29896, 29900, 29900, 29945]
+       88     997                      29929               [29929, 29929, 29955]
+       89     984                      29929               [29929, 29947, 29946]
+       90    9993                      29929        [29929, 29929, 29929, 29941]
+       91   10016                      29896 [29896, 29900, 29900, 29896, 29953]
+       92   10000                      29896 [29896, 29900, 29900, 29900, 29900]
+       93    9993                      29929        [29929, 29929, 29929, 29941]
+       94   10011                      29896 [29896, 29900, 29900, 29896, 29896]
+       95   10005                      29896 [29896, 29900, 29900, 29900, 29945]
+       96   10009                      29896 [29896, 29900, 29900, 29900, 29929]
+       97    9989                      29929        [29929, 29929, 29947, 29929]
+       98    9996                      29929        [29929, 29929, 29929, 29953]
+       99    9988                      29929        [29929, 29929, 29947, 29947]
+      100    9995                      29929        [29929, 29929, 29929, 29945]
+      101   10015                      29896 [29896, 29900, 29900, 29896, 29945]
+      102   10014                      29896 [29896, 29900, 29900, 29896, 29946]
+      103    9996                      29929        [29929, 29929, 29929, 29953]
+      104   10017                      29896 [29896, 29900, 29900, 29896, 29955]
+      105   10007                      29896 [29896, 29900, 29900, 29900, 29955]
+      106   10017                      29896 [29896, 29900, 29900, 29896, 29955]
+      107   10005                      29896 [29896, 29900, 29900, 29900, 29945]
+      108   10003                      29896 [29896, 29900, 29900, 29900, 29941]
+      109    9994                      29929        [29929, 29929, 29929, 29946]
+      110    9988                      29929        [29929, 29929, 29947, 29947]
+      111   10012                      29896 [29896, 29900, 29900, 29896, 29906]
+      112   10011                      29896 [29896, 29900, 29900, 29896, 29896]
+      113    9985                      29929        [29929, 29929, 29947, 29945]
+      114    9983                      29929        [29929, 29929, 29947, 29941]
+      115    9987                      29929        [29929, 29929, 29947, 29955]
+      116    9989                      29929        [29929, 29929, 29947, 29929]
+      117    9990                      29929        [29929, 29929, 29929, 29900]
+      118   10007                      29896 [29896, 29900, 29900, 29900, 29955]
+      119   10018                      29896 [29896, 29900, 29900, 29896, 29947]
+First token mapping: [{'first_decimal_digit': '1', 'first_completion_token_id': 29896, 'first_completion_token_text': '1'}, {'first_decimal_digit': '2', 'first_completion_token_id': 29906, 'first_completion_token_text': '2'}, {'first_decimal_digit': '3', 'first_completion_token_id': 29941, 'first_completion_token_text': '3'}, {'first_decimal_digit': '6', 'first_completion_token_id': 29953, 'first_completion_token_text': '6'}, {'first_decimal_digit': '7', 'first_completion_token_id': 29955, 'first_completion_token_text': '7'}, {'first_decimal_digit': '8', 'first_completion_token_id': 29947, 'first_completion_token_text': '8'}, {'first_decimal_digit': '9', 'first_completion_token_id': 29929, 'first_completion_token_text': '9'}]
+TASK 2: L27 PCA metrics: {'layer': 27, 'explained_variance_PC1': np.float32(0.22539994), 'explained_variance_PC2': np.float32(0.18938231), 'Spearman_target_PC1': np.float64(0.9195528477355647), 'Spearman_target_PC2': np.float64(0.1076772950318327), 'Pearson_target_PC1': np.float64(0.794429880226086), 'Pearson_target_PC2': np.float64(0.15132769321146883), 'Pearson_log10target_PC1': np.float64(0.8967032894016032), 'Pearson_log10target_PC2': np.float64(0.25365241307721054), 'archived_rho_abs': np.float64(0.9195528477355648), 'archived_ev_pc1': np.float64(0.2253999263048172)}
+TASK 5, BEFORE CLUSTERING: L27 raw coordinates:
+ point_id  target group         PC1         PC2
+       27       1    G1 -121.244545 -250.511292
+        1       2    G1 -318.042664  -89.744507
+       12       2    G1 -341.142273  -77.969574
+       18       2    G1 -329.411957  -93.124817
+       11       3    G1 -322.702301   -7.370231
+        8       6    G1 -337.881287  -29.023102
+       13       6    G1 -327.682648   -9.625985
+        6       7    G1 -353.924530   10.707433
+        0       8    G1 -382.617371   36.295547
+        5       9    G1 -262.006195  171.285645
+       28      11    G1 -161.154297 -288.966492
+       20      13    G1 -170.981110 -297.054230
+       14      14    G1 -162.142227 -297.641693
+        4      15    G1 -178.186737 -273.175781
+       15      15    G1 -172.718048 -276.381409
+       23      15    G1 -218.917664 -255.794037
+        3      16    G1 -174.632385 -260.739410
+        2      18    G1 -197.810211 -233.209137
+       26      18    G1 -166.682755 -201.239502
+       22      27    G1 -381.287781  -53.399014
+       10      28    G1 -363.648468  -62.448727
+       29      28    G1 -341.568176  -51.766357
+       24      29    G1 -358.236145  -32.732758
+       16      33    G1 -348.089233  -44.016079
+        7      35    G1 -356.670135  -31.161757
+       21      35    G1 -329.541870  -44.494122
+       19      36    G1 -363.982605  -33.307320
+        9      38    G1 -345.820282   -5.275483
+       25      38    G1 -379.337433  -11.531985
+       17      39    G1 -286.496338   -6.216086
+       43      82    G2 -319.081696   56.705498
+       56      82    G2 -346.718567   63.465359
+       55      84    G2 -371.859833   83.918564
+       36      85    G2 -356.282684   97.700554
+       48      85    G2 -349.862305   85.069191
+       59      85    G2 -356.799683   87.712181
+       35      86    G2 -378.644165   67.452164
+       38      86    G2 -303.507111   92.012321
+       46      87    G2 -330.867523  131.810806
+       32      89    G2 -378.069092   94.119034
+       54      92    G2 -262.369507  165.836472
+       33      93    G2 -168.828293  235.034760
+       57      94    G2 -235.631989  238.867096
+       42      96    G2 -220.692139  241.250763
+       31      97    G2 -247.735046  174.161469
+       50      98    G2 -163.775299  251.825134
+       58      98    G2 -184.216949  215.827942
+       30     101    G2 -129.208496 -303.662994
+       34     101    G2  -15.230741 -272.448151
+       39     102    G2  -24.773369 -281.069244
+       40     102    G2  -15.948160 -289.196320
+       52     103    G2    2.387766 -305.520630
+       37     104    G2  -71.628632 -243.457489
+       47     104    G2  116.817673 -242.556595
+       44     109    G2  -39.711967 -217.476410
+       45     114    G2  -81.460663 -255.651749
+       49     115    G2 -153.361191 -235.184418
+       53     116    G2  -29.999191 -229.357986
+       41     118    G2 -123.133598 -202.862411
+       51     119    G2  -59.799149 -200.137711
+       85     982    G3  -30.046951  301.932343
+       83     983    G3  -69.409958  308.309357
+       71     984    G3   -5.491404  294.447754
+       89     984    G3  133.167755  311.206757
+       61     986    G3 -111.269577  298.704620
+       66     990    G3  106.375183  340.339508
+       73     990    G3   -7.228683  340.729889
+       76     990    G3   47.799995  288.873016
+       69     993    G3    4.808858  298.875549
+       60     994    G3   97.067329  342.266907
+       81     994    G3  166.009262  338.879547
+       84     994    G3  107.656593  335.526825
+       75     995    G3  -13.220197  290.425568
+       63     997    G3   59.859200  339.112610
+       70     997    G3   56.247765  283.045166
+       79     997    G3  164.642776  397.584503
+       88     997    G3  152.834579  362.484253
+       82    1000    G3  224.569092 -238.385498
+       86    1000    G3  127.489998 -289.388184
+       68    1002    G3  200.159317 -273.159058
+       65    1003    G3  258.527496 -249.519836
+       67    1003    G3  292.064667 -213.468658
+       62    1004    G3  206.236343 -230.431931
+       78    1004    G3  176.379227 -287.733002
+       87    1005    G3  141.060242 -242.459549
+       64    1009    G3  289.064606 -201.144638
+       77    1009    G3  199.919250 -223.847824
+       74    1014    G3  216.067719 -220.175995
+       80    1015    G3  269.955597 -254.839325
+       72    1018    G3  135.698837 -252.061523
+      114    9983    G4  329.646729  430.865234
+      113    9985    G4  328.565613  389.574066
+      115    9987    G4  355.093262  394.173248
+       99    9988    G4  245.311920  337.788422
+      110    9988    G4  284.505402  371.840424
+       97    9989    G4  306.212494  386.054504
+      116    9989    G4  296.175903  415.101959
+      117    9990    G4  343.397156  377.192078
+       90    9993    G4  309.345184  339.457367
+       93    9993    G4  309.657593  346.437836
+      109    9994    G4  309.353027  424.933380
+      100    9995    G4  317.343781  395.670074
+       98    9996    G4  270.309418  367.569794
+      103    9996    G4  261.070801  332.465973
+       92   10000    G4  331.447418 -210.598633
+      108   10003    G4  382.832214 -197.121063
+       95   10005    G4  374.450317 -201.657547
+      107   10005    G4  390.872650 -265.078064
+      105   10007    G4  367.534424 -192.554611
+      118   10007    G4  393.320435 -253.329254
+       96   10009    G4  369.645538 -161.956299
+       94   10011    G4  439.362946 -280.483887
+      112   10011    G4  432.438263 -269.295105
+      111   10012    G4  293.887512 -194.348129
+      102   10014    G4  427.412598 -249.541199
+      101   10015    G4  395.511475 -217.383347
+       91   10016    G4  443.447388 -227.744797
+      104   10017    G4  399.743652 -201.005264
+      106   10017    G4  412.148407 -240.432281
+      119   10018    G4  437.513275 -247.278519
+TASK 4: L27 all cross-group edges (point IDs disambiguate repeat targets):
+G1 <-> G2: 12 edges
+ layer  source_point_id  source_target source_group  destination_point_id  destination_target destination_group  euclidean_distance_4096d  euclidean_distance_PCA2 source_leading_digit destination_leading_digit  PCA2_to_4096d_distance_ratio  distance_4096d_to_PCA2_ratio group_pair  source_to_destination  destination_to_source  source_neighbor_rank  destination_neighbor_rank
+    27                0              8           G1                    32                  89                G2                515.833031                58.002090                    8                         8                      0.112444                      8.893353      G1-G2                   True                  False                   2.0                        NaN
+    27                0              8           G1                    35                  86                G2                528.129148                31.408933                    8                         8                      0.059472                     16.814616      G1-G2                   True                  False                   3.0                        NaN
+    27                0              8           G1                    38                  86                G2                508.597261                96.761522                    8                         8                      0.190252                      5.256193      G1-G2                   True                  False                   1.0                        NaN
+    27                0              8           G1                    48                  85                G2                536.277477                58.751703                    8                         8                      0.109555                      9.127863      G1-G2                   True                  False                   4.0                        NaN
+    27                5              9           G1                    31                  97                G2                484.564898                14.558023                    9                         9                      0.030043                     33.285075      G1-G2                   True                   True                   2.0                        3.0
+    27                5              9           G1                    33                  93                G2                555.871990               112.898499                    9                         9                      0.203102                      4.923644      G1-G2                   True                  False                   4.0                        NaN
+    27                5              9           G1                    50                  98                G2                478.347721               127.027235                    9                         9                      0.265554                      3.765710      G1-G2                   True                  False                   1.0                        NaN
+    27                5              9           G1                    58                  98                G2                546.942754                89.639182                    9                         9                      0.163891                      6.101604      G1-G2                   True                  False                   3.0                        NaN
+    27                6              7           G1                    31                  97                G2                898.514225               194.919030                    7                         9                      0.216935                      4.609679      G1-G2                   True                  False                   4.0                        NaN
+    27               13              6           G1                    31                  97                G2                710.162276               200.423170                    6                         9                      0.282222                      3.543314      G1-G2                   True                  False                   4.0                        NaN
+    27               15             15           G1                    49                 115                G2                528.953666                45.517908                    1                         1                      0.086053                     11.620781      G1-G2                  False                   True                   NaN                        3.0
+    27               28             11           G1                    45                 114                G2                521.346714                86.376776                    1                         1                      0.165680                      6.035728      G1-G2                   True                  False                   4.0                        NaN
+G1 <-> G3: 0 edges
+Empty DataFrame
+Columns: [layer, source_point_id, source_target, source_group, destination_point_id, destination_target, destination_group, euclidean_distance_4096d, euclidean_distance_PCA2, source_leading_digit, destination_leading_digit, PCA2_to_4096d_distance_ratio, distance_4096d_to_PCA2_ratio, group_pair, source_to_destination, destination_to_source, source_neighbor_rank, destination_neighbor_rank]
+Index: []
+G1 <-> G4: 0 edges
+Empty DataFrame
+Columns: [layer, source_point_id, source_target, source_group, destination_point_id, destination_target, destination_group, euclidean_distance_4096d, euclidean_distance_PCA2, source_leading_digit, destination_leading_digit, PCA2_to_4096d_distance_ratio, distance_4096d_to_PCA2_ratio, group_pair, source_to_destination, destination_to_source, source_neighbor_rank, destination_neighbor_rank]
+Index: []
+G2 <-> G3: 2 edges
+ layer  source_point_id  source_target source_group  destination_point_id  destination_target destination_group  euclidean_distance_4096d  euclidean_distance_PCA2 source_leading_digit destination_leading_digit  PCA2_to_4096d_distance_ratio  distance_4096d_to_PCA2_ratio group_pair  source_to_destination  destination_to_source  source_neighbor_rank  destination_neighbor_rank
+    27               47            104           G2                    80                1015                G3                754.379166               153.629715                    1                         1                      0.203651                      4.910373      G2-G3                   True                  False                   4.0                        NaN
+    27               52            103           G2                    72                1018                G3                646.117155               143.630491                    1                         1                      0.222298                      4.498468      G2-G3                   True                  False                   3.0                        NaN
+G2 <-> G4: 0 edges
+Empty DataFrame
+Columns: [layer, source_point_id, source_target, source_group, destination_point_id, destination_target, destination_group, euclidean_distance_4096d, euclidean_distance_PCA2, source_leading_digit, destination_leading_digit, PCA2_to_4096d_distance_ratio, distance_4096d_to_PCA2_ratio, group_pair, source_to_destination, destination_to_source, source_neighbor_rank, destination_neighbor_rank]
+Index: []
+G3 <-> G4: 6 edges
+ layer  source_point_id  source_target source_group  destination_point_id  destination_target destination_group  euclidean_distance_4096d  euclidean_distance_PCA2 source_leading_digit destination_leading_digit  PCA2_to_4096d_distance_ratio  distance_4096d_to_PCA2_ratio group_pair  source_to_destination  destination_to_source  source_neighbor_rank  destination_neighbor_rank
+    27               67           1003           G3                   108               10003                G4                501.821263                92.227933                    1                         1                      0.183786                      5.441098      G3-G4                   True                  False                   4.0                        NaN
+    27               67           1003           G3                   118               10007                G4                483.418545               108.819105                    1                         1                      0.225103                      4.442405      G3-G4                   True                  False                   2.0                        NaN
+    27               79            997           G3                    98                9996                G4                511.581544               109.846811                    9                         9                      0.214720                      4.657227      G3-G4                   True                  False                   2.0                        NaN
+    27               79            997           G3                   116                9989                G4                513.080754               132.694479                    9                         9                      0.258623                      3.866632      G3-G4                   True                  False                   3.0                        NaN
+    27               82           1000           G3                    92               10000                G4                459.832424               110.431366                    1                         1                      0.240156                      4.163966      G3-G4                   True                   True                   2.0                        2.0
+    27               88            997           G3                   100                9995                G4                429.463100               167.823050                    9                         9                      0.390774                      2.559023      G3-G4                   True                  False                   4.0                        NaN
+L27 communicators ranked by undirected cross-group degree:
+ layer  point_id  target group leading_digit  cross_group_degree                                                                                                                                                                        exact_connected_nodes
+    27         0       8    G1             8                   4 [{"point_id": 32, "target": 89, "group": "G2"}, {"point_id": 35, "target": 86, "group": "G2"}, {"point_id": 38, "target": 86, "group": "G2"}, {"point_id": 48, "target": 85, "group": "G2"}]
+    27         5       9    G1             9                   4 [{"point_id": 31, "target": 97, "group": "G2"}, {"point_id": 33, "target": 93, "group": "G2"}, {"point_id": 50, "target": 98, "group": "G2"}, {"point_id": 58, "target": 98, "group": "G2"}]
+    27        31      97    G2             9                   3                                                     [{"point_id": 5, "target": 9, "group": "G1"}, {"point_id": 6, "target": 7, "group": "G1"}, {"point_id": 13, "target": 6, "group": "G1"}]
+    27        67    1003    G3             1                   2                                                                                       [{"point_id": 108, "target": 10003, "group": "G4"}, {"point_id": 118, "target": 10007, "group": "G4"}]
+    27        79     997    G3             9                   2                                                                                          [{"point_id": 98, "target": 9996, "group": "G4"}, {"point_id": 116, "target": 9989, "group": "G4"}]
+    27         6       7    G1             7                   1                                                                                                                                              [{"point_id": 31, "target": 97, "group": "G2"}]
+    27        13       6    G1             6                   1                                                                                                                                              [{"point_id": 31, "target": 97, "group": "G2"}]
+    27        15      15    G1             1                   1                                                                                                                                             [{"point_id": 49, "target": 115, "group": "G2"}]
+    27        28      11    G1             1                   1                                                                                                                                             [{"point_id": 45, "target": 114, "group": "G2"}]
+    27        32      89    G2             8                   1                                                                                                                                                [{"point_id": 0, "target": 8, "group": "G1"}]
+    27        33      93    G2             9                   1                                                                                                                                                [{"point_id": 5, "target": 9, "group": "G1"}]
+    27        35      86    G2             8                   1                                                                                                                                                [{"point_id": 0, "target": 8, "group": "G1"}]
+    27        38      86    G2             8                   1                                                                                                                                                [{"point_id": 0, "target": 8, "group": "G1"}]
+    27        45     114    G2             1                   1                                                                                                                                              [{"point_id": 28, "target": 11, "group": "G1"}]
+    27        47     104    G2             1                   1                                                                                                                                            [{"point_id": 80, "target": 1015, "group": "G3"}]
+    27        48      85    G2             8                   1                                                                                                                                                [{"point_id": 0, "target": 8, "group": "G1"}]
+    27        49     115    G2             1                   1                                                                                                                                              [{"point_id": 15, "target": 15, "group": "G1"}]
+    27        50      98    G2             9                   1                                                                                                                                                [{"point_id": 5, "target": 9, "group": "G1"}]
+    27        52     103    G2             1                   1                                                                                                                                            [{"point_id": 72, "target": 1018, "group": "G3"}]
+    27        58      98    G2             9                   1                                                                                                                                                [{"point_id": 5, "target": 9, "group": "G1"}]
+    27        72    1018    G3             1                   1                                                                                                                                             [{"point_id": 52, "target": 103, "group": "G2"}]
+    27        80    1015    G3             1                   1                                                                                                                                             [{"point_id": 47, "target": 104, "group": "G2"}]
+    27        82    1000    G3             1                   1                                                                                                                                           [{"point_id": 92, "target": 10000, "group": "G4"}]
+    27        88     997    G3             9                   1                                                                                                                                           [{"point_id": 100, "target": 9995, "group": "G4"}]
+    27        92   10000    G4             1                   1                                                                                                                                            [{"point_id": 82, "target": 1000, "group": "G3"}]
+    27        98    9996    G4             9                   1                                                                                                                                             [{"point_id": 79, "target": 997, "group": "G3"}]
+    27       100    9995    G4             9                   1                                                                                                                                             [{"point_id": 88, "target": 997, "group": "G3"}]
+    27       108   10003    G4             1                   1                                                                                                                                            [{"point_id": 67, "target": 1003, "group": "G3"}]
+    27       116    9989    G4             9                   1                                                                                                                                             [{"point_id": 79, "target": 997, "group": "G3"}]
+    27       118   10007    G4             1                   1                                                                                                                                            [{"point_id": 67, "target": 1003, "group": "G3"}]
+L27 G2 KMeans branch 0: [(82, 43), (82, 56), (84, 55), (85, 36), (85, 48), (85, 59), (86, 35), (86, 38), (87, 46), (89, 32), (92, 54), (93, 33), (94, 57), (96, 42), (97, 31), (98, 50), (98, 58)]
+L27 G2 KMeans branch 1: [(101, 30), (101, 34), (102, 39), (102, 40), (103, 52), (104, 37), (104, 47), (109, 44), (114, 45), (115, 49), (116, 53), (118, 41), (119, 51)]
+Within-group induced graph: {'layer': 27, 'group': 'G2', 'weak_components': 3, 'strong_components': 8, 'within_group_edges': 78, 'edges_between_kmeans_branches': 0, 'silhouette_PCA2': 0.7659475207328796, 'silhouette_4096d_same_labels': 0.25585748284055404, 'component_targets': '[[101, 101, 102, 102, 103, 104, 104, 109, 114, 115, 116, 118, 119], [92, 93, 94, 96, 97, 98, 98], [82, 82, 84, 85, 85, 85, 86, 86, 87, 89]]', 'component_point_ids': '[[30, 34, 37, 39, 40, 41, 44, 45, 47, 49, 51, 52, 53], [31, 33, 42, 50, 54, 57, 58], [32, 35, 36, 38, 43, 46, 48, 55, 56, 59]]'}
+L27 G2 cluster vs leading_decimal_digit:
+leading_decimal_digit   1   8  9
+cluster_id                      
+0                       0  10  7
+1                      13   0  0
+L27 G2 cluster vs boundary_side:
+boundary_side  above  below
+cluster_id                 
+0                  0     17
+1                 13      0
+L27 G2 cluster vs first_completion_token_id:
+first_completion_token_id  29896  29929  29947
+cluster_id                                    
+0                              0      7     10
+1                             13      0      0
+L27 G2 cluster vs number_of_completion_tokens:
+number_of_completion_tokens   2   3
+cluster_id                         
+0                            17   0
+1                             0  13
+L27 G3 KMeans branch 0: [(982, 85), (983, 83), (984, 71), (984, 89), (986, 61), (990, 66), (990, 73), (990, 76), (993, 69), (994, 60), (994, 81), (994, 84), (995, 75), (997, 63), (997, 70), (997, 79), (997, 88)]
+L27 G3 KMeans branch 1: [(1000, 82), (1000, 86), (1002, 68), (1003, 65), (1003, 67), (1004, 62), (1004, 78), (1005, 87), (1009, 64), (1009, 77), (1014, 74), (1015, 80), (1018, 72)]
+Within-group induced graph: {'layer': 27, 'group': 'G3', 'weak_components': 2, 'strong_components': 6, 'within_group_edges': 73, 'edges_between_kmeans_branches': 0, 'silhouette_PCA2': 0.8408549427986145, 'silhouette_4096d_same_labels': 0.37587206688851305, 'component_targets': '[[982, 983, 984, 984, 986, 990, 990, 990, 993, 994, 994, 994, 995, 997, 997, 997, 997], [1000, 1000, 1002, 1003, 1003, 1004, 1004, 1005, 1009, 1009, 1014, 1015, 1018]]', 'component_point_ids': '[[60, 61, 63, 66, 69, 70, 71, 73, 75, 76, 79, 81, 83, 84, 85, 88, 89], [62, 64, 65, 67, 68, 72, 74, 77, 78, 80, 82, 86, 87]]'}
+L27 G3 cluster vs leading_decimal_digit:
+leading_decimal_digit   1   9
+cluster_id                   
+0                       0  17
+1                      13   0
+L27 G3 cluster vs boundary_side:
+boundary_side  above  below  exact
+cluster_id                        
+0                  0     17      0
+1                 11      0      2
+L27 G3 cluster vs first_completion_token_id:
+first_completion_token_id  29896  29929
+cluster_id                             
+0                              0     17
+1                             13      0
+L27 G3 cluster vs number_of_completion_tokens:
+number_of_completion_tokens   3   4
+cluster_id                         
+0                            17   0
+1                             0  13
+L27 G4 KMeans branch 0: [(9983, 114), (9985, 113), (9987, 115), (9988, 99), (9988, 110), (9989, 97), (9989, 116), (9990, 117), (9993, 90), (9993, 93), (9994, 109), (9995, 100), (9996, 98), (9996, 103)]
+L27 G4 KMeans branch 1: [(10000, 92), (10003, 108), (10005, 95), (10005, 107), (10007, 105), (10007, 118), (10009, 96), (10011, 94), (10011, 112), (10012, 111), (10014, 102), (10015, 101), (10016, 91), (10017, 104), (10017, 106), (10018, 119)]
+Within-group induced graph: {'layer': 27, 'group': 'G4', 'weak_components': 2, 'strong_components': 8, 'within_group_edges': 89, 'edges_between_kmeans_branches': 0, 'silhouette_PCA2': 0.8988579511642456, 'silhouette_4096d_same_labels': 0.43773770541449075, 'component_targets': '[[9983, 9985, 9987, 9988, 9988, 9989, 9989, 9990, 9993, 9993, 9994, 9995, 9996, 9996], [10000, 10003, 10005, 10005, 10007, 10007, 10009, 10011, 10011, 10012, 10014, 10015, 10016, 10017, 10017, 10018]]', 'component_point_ids': '[[90, 93, 97, 98, 99, 100, 103, 109, 110, 113, 114, 115, 116, 117], [91, 92, 94, 95, 96, 101, 102, 104, 105, 106, 107, 108, 111, 112, 118, 119]]'}
+L27 G4 cluster vs leading_decimal_digit:
+leading_decimal_digit   1   9
+cluster_id                   
+0                       0  14
+1                      16   0
+L27 G4 cluster vs boundary_side:
+boundary_side  above  below  exact
+cluster_id                        
+0                  0     14      0
+1                 15      0      1
+L27 G4 cluster vs first_completion_token_id:
+first_completion_token_id  29896  29929
+cluster_id                             
+0                              0     14
+1                             16      0
+L27 G4 cluster vs number_of_completion_tokens:
+number_of_completion_tokens   4   5
+cluster_id                         
+0                            14   0
+1                             0  16
+TASK 2: L28 PCA metrics: {'layer': 28, 'explained_variance_PC1': np.float32(0.23485497), 'explained_variance_PC2': np.float32(0.2106255), 'Spearman_target_PC1': np.float64(0.10782315216888155), 'Spearman_target_PC2': np.float64(-0.9110132596402515), 'Pearson_target_PC1': np.float64(0.20369071630984484), 'Pearson_target_PC2': np.float64(-0.7507229367171739), 'Pearson_log10target_PC1': np.float64(0.31138363795779256), 'Pearson_log10target_PC2': np.float64(-0.8648612353377743), 'archived_rho_abs': np.float64(0.1078231521688815), 'archived_ev_pc1': np.float64(0.2348551154136657)}
+TASK 5, BEFORE CLUSTERING: L28 raw coordinates:
+ point_id  target group         PC1         PC2
+       27       1    G1 -276.752228  109.296158
+        1       2    G1 -131.268204  397.535034
+       12       2    G1 -125.582245  414.730042
+       18       2    G1 -139.369186  393.038635
+       11       3    G1  -22.110968  388.811859
+        8       6    G1  -78.528877  356.987762
+       13       6    G1  -55.626163  343.714172
+        6       7    G1  -50.592556  410.015778
+        0       8    G1  -38.749733  434.881958
+        5       9    G1  221.027161  288.418060
+       28      11    G1 -350.112000  104.826393
+       20      13    G1 -337.195068  140.185959
+       14      14    G1 -350.784790  118.136711
+        4      15    G1 -312.097839  142.724594
+       15      15    G1 -317.242035  135.583221
+       23      15    G1 -295.838898  192.780426
+        3      16    G1 -298.189148  145.596466
+        2      18    G1 -258.515106  171.907791
+       26      18    G1 -249.521515  141.338562
+       22      27    G1 -101.412781  446.014465
+       10      28    G1 -108.238045  426.844727
+       29      28    G1  -94.345406  411.189392
+       24      29    G1  -77.375488  432.294006
+       16      33    G1  -88.552307  398.324951
+        7      35    G1  -75.344513  401.841919
+       21      35    G1  -87.510468  378.863892
+       19      36    G1  -74.850746  418.732361
+        9      38    G1  -51.927906  398.357025
+       25      38    G1  -57.825199  430.335632
+       17      39    G1  -45.775768  336.027557
+       43      82    G2  -31.951168  351.282135
+       56      82    G2  -19.632879  390.001892
+       55      84    G2  -16.266304  420.543243
+       36      85    G2    5.713206  399.267181
+       48      85    G2   -1.437136  398.277832
+       59      85    G2   -3.733549  408.557129
+       35      86    G2  -12.390464  427.267090
+       38      86    G2   14.581966  356.645996
+       46      87    G2   30.315683  383.797333
+       32      89    G2    7.799664  435.332520
+       54      92    G2  214.689743  292.736633
+       33      93    G2  328.302704  180.169189
+       57      94    G2  301.904266  260.380676
+       42      96    G2  314.515594  233.347183
+       31      97    G2  237.032471  265.208923
+       50      98    G2  339.991699  173.452057
+       58      98    G2  282.552856  190.901108
+       30     101    G2 -341.849731   93.338173
+       34     101    G2 -310.488770  -33.226585
+       39     102    G2 -328.531097  -26.668243
+       40     102    G2 -326.781189  -15.767715
+       52     103    G2 -337.330109  -44.837734
+       37     104    G2 -292.258362   28.761829
+       47     104    G2 -309.369141 -177.560989
+       44     109    G2 -288.183472   -7.197438
+       45     114    G2 -318.085480   27.709011
+       49     115    G2 -292.281555  118.338615
+       53     116    G2 -289.815826  -25.723574
+       41     118    G2 -262.766449   80.532295
+       51     119    G2 -250.092865   16.620840
+       85     982    G3  403.624817   39.574219
+       83     983    G3  402.952637   74.190880
+       71     984    G3  376.273254   17.164299
+       89     984    G3  434.196777 -132.745712
+       61     986    G3  350.265442  127.637405
+       66     990    G3  445.772491  -97.214615
+       73     990    G3  432.000183   33.762684
+       76     990    G3  370.557953  -33.462437
+       69     993    G3  387.762543   11.062501
+       60     994    G3  434.313873  -66.597191
+       81     994    G3  450.110046 -140.833084
+       84     994    G3  419.094055  -91.968735
+       75     995    G3  376.508209    7.677724
+       63     997    G3  444.213531  -48.861755
+       70     997    G3  380.552643  -50.777031
+       79     997    G3  513.746033 -142.004059
+       88     997    G3  477.586761 -136.719269
+       82    1000    G3 -277.380890 -257.892181
+       86    1000    G3 -331.431702 -171.062576
+       68    1002    G3 -312.092957 -254.698807
+       65    1003    G3 -304.289124 -321.824402
+       67    1003    G3 -253.688782 -337.969177
+       62    1004    G3 -265.064453 -249.141800
+       78    1004    G3 -340.450562 -240.365005
+       87    1005    G3 -291.542511 -189.179840
+       64    1009    G3 -250.300186 -342.886169
+       77    1009    G3 -255.893372 -248.761612
+       74    1014    G3 -280.622009 -271.904388
+       80    1015    G3 -293.439514 -319.729919
+       72    1018    G3 -291.645050 -179.320923
+      114    9983    G4  576.482727 -309.432556
+      113    9985    G4  535.362732 -300.906036
+      115    9987    G4  562.326355 -343.676483
+       99    9988    G4  459.737915 -220.912491
+      110    9988    G4  512.012390 -259.730957
+       97    9989    G4  506.995209 -270.123932
+      116    9989    G4  547.450439 -266.050507
+      117    9990    G4  512.434570 -324.546234
+       90    9993    G4  472.969788 -283.814240
+       93    9993    G4  471.488434 -288.156006
+      109    9994    G4  553.468079 -278.327728
+      100    9995    G4  534.330444 -286.618195
+       98    9996    G4  486.547119 -228.379776
+      103    9996    G4  445.919312 -231.250015
+       92   10000    G4 -252.292969 -371.954895
+      108   10003    G4 -228.360062 -423.334747
+       95   10005    G4 -248.490341 -424.633484
+      107   10005    G4 -311.387970 -443.799805
+      105   10007    G4 -217.636093 -402.071716
+      118   10007    G4 -290.326111 -435.126648
+       96   10009    G4 -184.080170 -399.920135
+       94   10011    G4 -322.052948 -492.381012
+      112   10011    G4 -324.926514 -497.001068
+      111   10012    G4 -228.349747 -304.369537
+      102   10014    G4 -291.758026 -470.274658
+      101   10015    G4 -255.468384 -433.556122
+       91   10016    G4 -272.556091 -500.806702
+      104   10017    G4 -246.669388 -447.684296
+      106   10017    G4 -271.958954 -458.578522
+      119   10018    G4 -296.848267 -498.552948
+TASK 4: L28 all cross-group edges (point IDs disambiguate repeat targets):
+G1 <-> G2: 12 edges
+ layer  source_point_id  source_target source_group  destination_point_id  destination_target destination_group  euclidean_distance_4096d  euclidean_distance_PCA2 source_leading_digit destination_leading_digit  PCA2_to_4096d_distance_ratio  distance_4096d_to_PCA2_ratio group_pair  source_to_destination  destination_to_source  source_neighbor_rank  destination_neighbor_rank
+    28                0              8           G1                    32                  89                G2                556.657314                46.551577                    8                         8                      0.083627                     11.957862      G1-G2                   True                  False                   2.0                        NaN
+    28                0              8           G1                    35                  86                G2                569.767593                27.437152                    8                         8                      0.048155                     20.766281      G1-G2                   True                  False                   3.0                        NaN
+    28                0              8           G1                    38                  86                G2                541.930639                94.684402                    8                         8                      0.174717                      5.723547      G1-G2                   True                  False                   1.0                        NaN
+    28                0              8           G1                    48                  85                G2                575.271390                52.269416                    8                         8                      0.090860                     11.005889      G1-G2                   True                  False                   4.0                        NaN
+    28                5              9           G1                    31                  97                G2                514.033918                28.192800                    9                         9                      0.054846                     18.232808      G1-G2                   True                   True                   1.0                        2.0
+    28                5              9           G1                    33                  93                G2                591.120131               152.400329                    9                         9                      0.257816                      3.878733      G1-G2                   True                  False                   4.0                        NaN
+    28                5              9           G1                    50                  98                G2                519.631578               165.438035                    9                         9                      0.318376                      3.140944      G1-G2                   True                  False                   2.0                        NaN
+    28                5              9           G1                    58                  98                G2                582.580343               115.303804                    9                         9                      0.197919                      5.052568      G1-G2                   True                  False                   3.0                        NaN
+    28                6              7           G1                    31                  97                G2                992.835189               322.020467                    7                         9                      0.324344                      3.083143      G1-G2                   True                  False                   4.0                        NaN
+    28               14             14           G1                    49                 115                G2                570.005209                58.503583                    1                         1                      0.102637                      9.743082      G1-G2                  False                   True                   NaN                        3.0
+    28               15             15           G1                    49                 115                G2                560.048410                30.338128                    1                         1                      0.054171                     18.460217      G1-G2                  False                   True                   NaN                        2.0
+    28               28             11           G1                    45                 114                G2                545.790845                83.503225                    1                         1                      0.152995                      6.536165      G1-G2                   True                  False                   4.0                        NaN
+G1 <-> G3: 0 edges
+Empty DataFrame
+Columns: [layer, source_point_id, source_target, source_group, destination_point_id, destination_target, destination_group, euclidean_distance_4096d, euclidean_distance_PCA2, source_leading_digit, destination_leading_digit, PCA2_to_4096d_distance_ratio, distance_4096d_to_PCA2_ratio, group_pair, source_to_destination, destination_to_source, source_neighbor_rank, destination_neighbor_rank]
+Index: []
+G1 <-> G4: 0 edges
+Empty DataFrame
+Columns: [layer, source_point_id, source_target, source_group, destination_point_id, destination_target, destination_group, euclidean_distance_4096d, euclidean_distance_PCA2, source_leading_digit, destination_leading_digit, PCA2_to_4096d_distance_ratio, distance_4096d_to_PCA2_ratio, group_pair, source_to_destination, destination_to_source, source_neighbor_rank, destination_neighbor_rank]
+Index: []
+G2 <-> G3: 3 edges
+ layer  source_point_id  source_target source_group  destination_point_id  destination_target destination_group  euclidean_distance_4096d  euclidean_distance_PCA2 source_leading_digit destination_leading_digit  PCA2_to_4096d_distance_ratio  distance_4096d_to_PCA2_ratio group_pair  source_to_destination  destination_to_source  source_neighbor_rank  destination_neighbor_rank
+    28               33             93           G2                    69                 993                G3                502.701468               179.255529                    9                         9                      0.356584                      2.804385      G2-G3                   True                  False                   4.0                        NaN
+    28               47            104           G2                    74                1014                G3                830.700367                98.625932                    1                         1                      0.118726                      8.422738      G2-G3                   True                  False                   4.0                        NaN
+    28               52            103           G2                    72                1018                G3                705.347728               142.031168                    1                         1                      0.201363                      4.966147      G2-G3                   True                  False                   3.0                        NaN
+G2 <-> G4: 0 edges
+Empty DataFrame
+Columns: [layer, source_point_id, source_target, source_group, destination_point_id, destination_target, destination_group, euclidean_distance_4096d, euclidean_distance_PCA2, source_leading_digit, destination_leading_digit, PCA2_to_4096d_distance_ratio, distance_4096d_to_PCA2_ratio, group_pair, source_to_destination, destination_to_source, source_neighbor_rank, destination_neighbor_rank]
+Index: []
+G3 <-> G4: 7 edges
+ layer  source_point_id  source_target source_group  destination_point_id  destination_target destination_group  euclidean_distance_4096d  euclidean_distance_PCA2 source_leading_digit destination_leading_digit  PCA2_to_4096d_distance_ratio  distance_4096d_to_PCA2_ratio group_pair  source_to_destination  destination_to_source  source_neighbor_rank  destination_neighbor_rank
+    28               67           1003           G3                   105               10007                G4                537.638352                73.545441                    1                         1                      0.136794                      7.310288      G3-G4                   True                  False                   4.0                        NaN
+    28               67           1003           G3                   108               10003                G4                533.375260                89.043948                    1                         1                      0.166944                      5.990023      G3-G4                   True                  False                   3.0                        NaN
+    28               67           1003           G3                   118               10007                G4                514.339951               103.835774                    1                         1                      0.201882                      4.953398      G3-G4                   True                  False                   2.0                        NaN
+    28               79            997           G3                    98                9996                G4                551.284250                90.556863                    9                         9                      0.164265                      6.087714      G3-G4                   True                  False                   2.0                        NaN
+    28               79            997           G3                   116                9989                G4                564.681152               128.543799                    9                         9                      0.227640                      4.392909      G3-G4                   True                  False                   3.0                        NaN
+    28               82           1000           G3                    92               10000                G4                497.389617               116.789154                    1                         1                      0.234804                      4.258868      G3-G4                   True                   True                   2.0                        1.0
+    28               88            997           G3                   100                9995                G4                459.392976               160.279548                    9                         9                      0.348894                      2.866198      G3-G4                   True                  False                   4.0                        NaN
+L28 communicators ranked by undirected cross-group degree:
+ layer  point_id  target group leading_digit  cross_group_degree                                                                                                                                                                        exact_connected_nodes
+    28         0       8    G1             8                   4 [{"point_id": 32, "target": 89, "group": "G2"}, {"point_id": 35, "target": 86, "group": "G2"}, {"point_id": 38, "target": 86, "group": "G2"}, {"point_id": 48, "target": 85, "group": "G2"}]
+    28         5       9    G1             9                   4 [{"point_id": 31, "target": 97, "group": "G2"}, {"point_id": 33, "target": 93, "group": "G2"}, {"point_id": 50, "target": 98, "group": "G2"}, {"point_id": 58, "target": 98, "group": "G2"}]
+    28        67    1003    G3             1                   3                                    [{"point_id": 105, "target": 10007, "group": "G4"}, {"point_id": 108, "target": 10003, "group": "G4"}, {"point_id": 118, "target": 10007, "group": "G4"}]
+    28        31      97    G2             9                   2                                                                                                   [{"point_id": 5, "target": 9, "group": "G1"}, {"point_id": 6, "target": 7, "group": "G1"}]
+    28        33      93    G2             9                   2                                                                                                [{"point_id": 5, "target": 9, "group": "G1"}, {"point_id": 69, "target": 993, "group": "G3"}]
+    28        49     115    G2             1                   2                                                                                               [{"point_id": 14, "target": 14, "group": "G1"}, {"point_id": 15, "target": 15, "group": "G1"}]
+    28        79     997    G3             9                   2                                                                                          [{"point_id": 98, "target": 9996, "group": "G4"}, {"point_id": 116, "target": 9989, "group": "G4"}]
+    28         6       7    G1             7                   1                                                                                                                                              [{"point_id": 31, "target": 97, "group": "G2"}]
+    28        14      14    G1             1                   1                                                                                                                                             [{"point_id": 49, "target": 115, "group": "G2"}]
+    28        15      15    G1             1                   1                                                                                                                                             [{"point_id": 49, "target": 115, "group": "G2"}]
+    28        28      11    G1             1                   1                                                                                                                                             [{"point_id": 45, "target": 114, "group": "G2"}]
+    28        32      89    G2             8                   1                                                                                                                                                [{"point_id": 0, "target": 8, "group": "G1"}]
+    28        35      86    G2             8                   1                                                                                                                                                [{"point_id": 0, "target": 8, "group": "G1"}]
+    28        38      86    G2             8                   1                                                                                                                                                [{"point_id": 0, "target": 8, "group": "G1"}]
+    28        45     114    G2             1                   1                                                                                                                                              [{"point_id": 28, "target": 11, "group": "G1"}]
+    28        47     104    G2             1                   1                                                                                                                                            [{"point_id": 74, "target": 1014, "group": "G3"}]
+    28        48      85    G2             8                   1                                                                                                                                                [{"point_id": 0, "target": 8, "group": "G1"}]
+    28        50      98    G2             9                   1                                                                                                                                                [{"point_id": 5, "target": 9, "group": "G1"}]
+    28        52     103    G2             1                   1                                                                                                                                            [{"point_id": 72, "target": 1018, "group": "G3"}]
+    28        58      98    G2             9                   1                                                                                                                                                [{"point_id": 5, "target": 9, "group": "G1"}]
+    28        69     993    G3             9                   1                                                                                                                                              [{"point_id": 33, "target": 93, "group": "G2"}]
+    28        72    1018    G3             1                   1                                                                                                                                             [{"point_id": 52, "target": 103, "group": "G2"}]
+    28        74    1014    G3             1                   1                                                                                                                                             [{"point_id": 47, "target": 104, "group": "G2"}]
+    28        82    1000    G3             1                   1                                                                                                                                           [{"point_id": 92, "target": 10000, "group": "G4"}]
+    28        88     997    G3             9                   1                                                                                                                                           [{"point_id": 100, "target": 9995, "group": "G4"}]
+    28        92   10000    G4             1                   1                                                                                                                                            [{"point_id": 82, "target": 1000, "group": "G3"}]
+    28        98    9996    G4             9                   1                                                                                                                                             [{"point_id": 79, "target": 997, "group": "G3"}]
+    28       100    9995    G4             9                   1                                                                                                                                             [{"point_id": 88, "target": 997, "group": "G3"}]
+    28       105   10007    G4             1                   1                                                                                                                                            [{"point_id": 67, "target": 1003, "group": "G3"}]
+    28       108   10003    G4             1                   1                                                                                                                                            [{"point_id": 67, "target": 1003, "group": "G3"}]
+    28       116    9989    G4             9                   1                                                                                                                                             [{"point_id": 79, "target": 997, "group": "G3"}]
+    28       118   10007    G4             1                   1                                                                                                                                            [{"point_id": 67, "target": 1003, "group": "G3"}]
+L28 G2 KMeans branch 0: [(82, 43), (82, 56), (84, 55), (85, 36), (85, 48), (85, 59), (86, 35), (86, 38), (87, 46), (89, 32), (92, 54), (93, 33), (94, 57), (96, 42), (97, 31), (98, 50), (98, 58)]
+L28 G2 KMeans branch 1: [(101, 30), (101, 34), (102, 39), (102, 40), (103, 52), (104, 37), (104, 47), (109, 44), (114, 45), (115, 49), (116, 53), (118, 41), (119, 51)]
+Within-group induced graph: {'layer': 28, 'group': 'G2', 'weak_components': 3, 'strong_components': 9, 'within_group_edges': 78, 'edges_between_kmeans_branches': 0, 'silhouette_PCA2': 0.7217572331428528, 'silhouette_4096d_same_labels': 0.26820698500125206, 'component_targets': '[[101, 101, 102, 102, 103, 104, 104, 109, 114, 115, 116, 118, 119], [92, 93, 94, 96, 97, 98, 98], [82, 82, 84, 85, 85, 85, 86, 86, 87, 89]]', 'component_point_ids': '[[30, 34, 37, 39, 40, 41, 44, 45, 47, 49, 51, 52, 53], [31, 33, 42, 50, 54, 57, 58], [32, 35, 36, 38, 43, 46, 48, 55, 56, 59]]'}
+L28 G2 cluster vs leading_decimal_digit:
+leading_decimal_digit   1   8  9
+cluster_id                      
+0                       0  10  7
+1                      13   0  0
+L28 G2 cluster vs boundary_side:
+boundary_side  above  below
+cluster_id                 
+0                  0     17
+1                 13      0
+L28 G2 cluster vs first_completion_token_id:
+first_completion_token_id  29896  29929  29947
+cluster_id                                    
+0                              0      7     10
+1                             13      0      0
+L28 G2 cluster vs number_of_completion_tokens:
+number_of_completion_tokens   2   3
+cluster_id                         
+0                            17   0
+1                             0  13
+L28 G3 KMeans branch 0: [(982, 85), (983, 83), (984, 71), (984, 89), (986, 61), (990, 66), (990, 73), (990, 76), (993, 69), (994, 60), (994, 81), (994, 84), (995, 75), (997, 63), (997, 70), (997, 79), (997, 88)]
+L28 G3 KMeans branch 1: [(1000, 82), (1000, 86), (1002, 68), (1003, 65), (1003, 67), (1004, 62), (1004, 78), (1005, 87), (1009, 64), (1009, 77), (1014, 74), (1015, 80), (1018, 72)]
+Within-group induced graph: {'layer': 28, 'group': 'G3', 'weak_components': 2, 'strong_components': 6, 'within_group_edges': 71, 'edges_between_kmeans_branches': 0, 'silhouette_PCA2': 0.8678464889526367, 'silhouette_4096d_same_labels': 0.43161747210680673, 'component_targets': '[[982, 983, 984, 984, 986, 990, 990, 990, 993, 994, 994, 994, 995, 997, 997, 997, 997], [1000, 1000, 1002, 1003, 1003, 1004, 1004, 1005, 1009, 1009, 1014, 1015, 1018]]', 'component_point_ids': '[[60, 61, 63, 66, 69, 70, 71, 73, 75, 76, 79, 81, 83, 84, 85, 88, 89], [62, 64, 65, 67, 68, 72, 74, 77, 78, 80, 82, 86, 87]]'}
+L28 G3 cluster vs leading_decimal_digit:
+leading_decimal_digit   1   9
+cluster_id                   
+0                       0  17
+1                      13   0
+L28 G3 cluster vs boundary_side:
+boundary_side  above  below  exact
+cluster_id                        
+0                  0     17      0
+1                 11      0      2
+L28 G3 cluster vs first_completion_token_id:
+first_completion_token_id  29896  29929
+cluster_id                             
+0                              0     17
+1                             13      0
+L28 G3 cluster vs number_of_completion_tokens:
+number_of_completion_tokens   3   4
+cluster_id                         
+0                            17   0
+1                             0  13
+L28 G4 KMeans branch 0: [(9983, 114), (9985, 113), (9987, 115), (9988, 99), (9988, 110), (9989, 97), (9989, 116), (9990, 117), (9993, 90), (9993, 93), (9994, 109), (9995, 100), (9996, 98), (9996, 103)]
+L28 G4 KMeans branch 1: [(10000, 92), (10003, 108), (10005, 95), (10005, 107), (10007, 105), (10007, 118), (10009, 96), (10011, 94), (10011, 112), (10012, 111), (10014, 102), (10015, 101), (10016, 91), (10017, 104), (10017, 106), (10018, 119)]
+Within-group induced graph: {'layer': 28, 'group': 'G4', 'weak_components': 2, 'strong_components': 8, 'within_group_edges': 88, 'edges_between_kmeans_branches': 0, 'silhouette_PCA2': 0.9052121043205261, 'silhouette_4096d_same_labels': 0.5005154516204715, 'component_targets': '[[9983, 9985, 9987, 9988, 9988, 9989, 9989, 9990, 9993, 9993, 9994, 9995, 9996, 9996], [10000, 10003, 10005, 10005, 10007, 10007, 10009, 10011, 10011, 10012, 10014, 10015, 10016, 10017, 10017, 10018]]', 'component_point_ids': '[[90, 93, 97, 98, 99, 100, 103, 109, 110, 113, 114, 115, 116, 117], [91, 92, 94, 95, 96, 101, 102, 104, 105, 106, 107, 108, 111, 112, 118, 119]]'}
+L28 G4 cluster vs leading_decimal_digit:
+leading_decimal_digit   1   9
+cluster_id                   
+0                       0  14
+1                      16   0
+L28 G4 cluster vs boundary_side:
+boundary_side  above  below  exact
+cluster_id                        
+0                  0     14      0
+1                 15      0      1
+L28 G4 cluster vs first_completion_token_id:
+first_completion_token_id  29896  29929
+cluster_id                             
+0                              0     14
+1                             16      0
+L28 G4 cluster vs number_of_completion_tokens:
+number_of_completion_tokens   4   5
+cluster_id                         
+0                            14   0
+1                             0  16
+Feature metrics:  layer group                     feature  cluster_purity  adjusted_mutual_information  feature_to_cluster_majority_accuracy  majority_cluster_baseline
+    27    G2       leading_decimal_digit        0.766667                     0.771451                                   1.0                   0.566667
+    27    G2               boundary_side        1.000000                     1.000000                                   1.0                   0.566667
+    27    G2   first_completion_token_id        0.766667                     0.771451                                   1.0                   0.566667
+    27    G2 number_of_completion_tokens        1.000000                     1.000000                                   1.0                   0.566667
+    27    G3       leading_decimal_digit        1.000000                     1.000000                                   1.0                   0.566667
+    27    G3               boundary_side        0.933333                     0.873652                                   1.0                   0.566667
+    27    G3   first_completion_token_id        1.000000                     1.000000                                   1.0                   0.566667
+    27    G3 number_of_completion_tokens        1.000000                     1.000000                                   1.0                   0.566667
+    27    G4       leading_decimal_digit        1.000000                     1.000000                                   1.0                   0.533333
+    27    G4               boundary_side        0.966667                     0.912446                                   1.0                   0.533333
+    27    G4   first_completion_token_id        1.000000                     1.000000                                   1.0                   0.533333
+    27    G4 number_of_completion_tokens        1.000000                     1.000000                                   1.0                   0.533333
+    28    G2       leading_decimal_digit        0.766667                     0.771451                                   1.0                   0.566667
+    28    G2               boundary_side        1.000000                     1.000000                                   1.0                   0.566667
+    28    G2   first_completion_token_id        0.766667                     0.771451                                   1.0                   0.566667
+    28    G2 number_of_completion_tokens        1.000000                     1.000000                                   1.0                   0.566667
+    28    G3       leading_decimal_digit        1.000000                     1.000000                                   1.0                   0.566667
+    28    G3               boundary_side        0.933333                     0.873652                                   1.0                   0.566667
+    28    G3   first_completion_token_id        1.000000                     1.000000                                   1.0                   0.566667
+    28    G3 number_of_completion_tokens        1.000000                     1.000000                                   1.0                   0.566667
+    28    G4       leading_decimal_digit        1.000000                     1.000000                                   1.0                   0.533333
+    28    G4               boundary_side        0.966667                     0.912446                                   1.0                   0.533333
+    28    G4   first_completion_token_id        1.000000                     1.000000                                   1.0                   0.533333
+    28    G4 number_of_completion_tokens        1.000000                     1.000000                                   1.0                   0.533333
+TASK 7: all point rank changes:
+  point_id  target group     PC1_L27  PC1_rank_L27     PC1_L28  PC1_rank_L28  rank_change  absolute_rank_change  numerical_rank  contribution_to_rho_drop
+        0       8    G1 -382.617371           1.0  -38.749733          70.0         69.0                  69.0             9.0                  0.024681
+        1       2    G1 -318.042664          27.0 -131.268204          54.0         27.0                  27.0             3.0                  0.010783
+        2      18    G1 -197.810211          36.0 -258.515106          39.0          3.0                   3.0            18.5                  0.000875
+        3      16    G1 -174.632385          39.0 -298.189148          20.0        -19.0                  19.0            17.0                 -0.005741
+        4      15    G1 -178.186737          38.0 -312.097839          14.0        -24.0                  24.0            15.0                 -0.007585
+        5       9    G1 -262.006195          31.0  221.027161          83.0         52.0                  52.0            10.0                  0.018239
+        6       7    G1 -353.924530          13.0  -50.592556          68.0         55.0                  55.0             8.0                  0.020055
+        7      35    G1 -356.670135          11.0  -75.344513          63.0         52.0                  52.0            25.5                  0.012641
+        8       6    G1 -337.881287          20.0  -78.528877          61.0         41.0                  41.0             6.5                  0.015378
+        9      38    G1 -345.820282          17.0  -51.927906          67.0         50.0                  50.0            28.5                  0.011113
+       10      28    G1 -363.648468           8.0 -108.238045          56.0         48.0                  48.0            21.5                  0.013002
+       11       3    G1 -322.702301          25.0  -22.110968          72.0         47.0                  47.0             5.0                  0.018118
+       12       2    G1 -341.142273          19.0 -125.582245          55.0         36.0                  36.0             3.0                  0.014377
+       13       6    G1 -327.682648          24.0  -55.626163          66.0         42.0                  42.0             6.5                  0.015753
+       14      14    G1 -162.142227          45.0 -350.784790           1.0        -44.0                  44.0            13.0                 -0.014516
+       15      15    G1 -172.718048          40.0 -317.242035          13.0        -27.0                  27.0            15.0                 -0.008533
+       16      33    G1 -348.089233          15.0  -88.552307          59.0         44.0                  44.0            24.0                  0.011155
+       17      39    G1 -286.496338          29.0  -45.775768          69.0         40.0                  40.0            30.0                  0.008474
+       18       2    G1 -329.411957          23.0 -139.369186          53.0         30.0                  30.0             3.0                  0.011981
+       19      36    G1 -363.982605           7.0  -74.850746          64.0         57.0                  57.0            27.0                  0.013263
+       20      13    G1 -170.981110          41.0 -337.195068           6.0        -35.0                  35.0            12.0                 -0.011790
+       21      35    G1 -329.541870          22.0  -87.510468          60.0         38.0                  38.0            25.5                  0.009238
+       22      27    G1 -381.287781           2.0 -101.412781          57.0         55.0                  55.0            20.0                  0.015471
+       23      15    G1 -218.917664          35.0 -295.838898          22.0        -13.0                  13.0            15.0                 -0.004108
+       24      29    G1 -358.236145           9.0  -77.375488          62.0         53.0                  53.0            23.0                  0.013804
+       25      38    G1 -379.337433           3.0  -57.825199          65.0         62.0                  62.0            28.5                  0.013780
+       26      18    G1 -166.682755          43.0 -249.521515          46.0          3.0                   3.0            18.5                  0.000875
+       27       1    G1 -121.244545          50.0 -276.752228          34.0        -16.0                  16.0             1.0                 -0.006612
+       28      11    G1 -161.154297          46.0 -350.112000           2.0        -44.0                  44.0            11.0                 -0.015127
+       29      28    G1 -341.568176          18.0  -94.345406          58.0         40.0                  40.0            21.5                  0.010835
+       30     101    G2 -129.208496          48.0 -341.849731           3.0        -45.0                  45.0            48.5                 -0.003751
+       31      97    G2 -247.735046          32.0  237.032471          84.0         52.0                  52.0            45.0                  0.005598
+       32      89    G2 -378.069092           5.0    7.799664          79.0         74.0                  74.0            40.0                  0.010536
+       33      93    G2 -168.828293          42.0  328.302704          88.0         46.0                  46.0            42.0                  0.005911
+       34     101    G2  -15.230741          61.0 -310.488770          17.0        -44.0                  44.0            48.5                 -0.003667
+       35      86    G2 -378.644165           4.0  -12.390464          75.0         71.0                  71.0            37.5                  0.011342
+       36      85    G2 -356.282684          12.0    5.713206          78.0         66.0                  66.0            35.0                  0.011689
+       37     104    G2  -71.628632          53.0 -292.258362          25.0        -28.0                  28.0            53.5                 -0.001361
+       38      86    G2 -303.507111          28.0   14.581966          80.0         52.0                  52.0            37.5                  0.008307
+       39     102    G2  -24.773369          59.0 -328.531097           8.0        -51.0                  51.0            50.5                 -0.003542
+       40     102    G2  -15.948160          60.0 -326.781189           9.0        -51.0                  51.0            50.5                 -0.003542
+       41     118    G2 -123.133598          49.0 -262.766449          38.0        -11.0                  11.0            59.0                 -0.000115
+       42      96    G2 -220.692139          34.0  314.515594          87.0         53.0                  53.0            44.0                  0.006074
+       43      82    G2 -319.081696          26.0  -31.951168          71.0         45.0                  45.0            31.5                  0.009064
+       44     109    G2  -39.711967          56.0 -288.183472          31.0        -25.0                  25.0            55.0                 -0.000955
+       45     114    G2  -81.460663          52.0 -318.085480          12.0        -40.0                  40.0            56.0                 -0.001250
+       46      87    G2 -330.867523          21.0   30.315683          81.0         60.0                  60.0            39.0                  0.008960
+       47     104    G2  116.817673          73.0 -309.369141          18.0        -55.0                  55.0            53.5                 -0.002674
+       48      85    G2 -349.862305          14.0   -1.437136          77.0         63.0                  63.0            35.0                  0.011158
+       49     115    G2 -153.361191          47.0 -292.281555          24.0        -23.0                  23.0            57.0                 -0.000559
+       50      98    G2 -163.775299          44.0  339.991699          89.0         45.0                  45.0            46.5                  0.004376
+       51     119    G2  -59.799149          55.0 -250.092865          45.0        -10.0                  10.0            60.0                 -0.000035
+       52     103    G2    2.387766          65.0 -337.330109           5.0        -60.0                  60.0            52.0                 -0.003542
+       53     116    G2  -29.999191          58.0 -289.815826          30.0        -28.0                  28.0            58.0                 -0.000486
+       54      92    G2 -262.369507          30.0  214.689743          82.0         52.0                  52.0            41.0                  0.007043
+       55      84    G2 -371.859833           6.0  -16.266304          74.0         68.0                  68.0            33.0                  0.012988
+       56      82    G2 -346.718567          16.0  -19.632879          73.0         57.0                  57.0            31.5                  0.011481
+       57      94    G2 -235.631989          33.0  301.904266          86.0         53.0                  53.0            43.0                  0.006442
+       58      98    G2 -184.216949          37.0  282.552856          85.0         48.0                  48.0            46.5                  0.004667
+       59      85    G2 -356.799683          10.0   -3.733549          76.0         66.0                  66.0            35.0                  0.011689
+       60     994    G3   97.067329          70.0  434.313873         101.0         31.0                  31.0            71.0                 -0.002261
+       61     986    G3 -111.269577          51.0  350.265442          90.0         39.0                  39.0            65.0                 -0.001219
+       62    1004    G3  206.236343          84.0 -265.064453          37.0        -47.0                  47.0            83.5                  0.007508
+       63     997    G3   59.859200          69.0  444.213531         102.0         33.0                  33.0            75.5                 -0.003438
+       64    1009    G3  289.064606          93.0 -250.300186          44.0        -49.0                  49.0            86.5                  0.008849
+       65    1003    G3  258.527496          88.0 -304.289124          19.0        -69.0                  69.0            81.5                  0.010064
+       66     990    G3  106.375183          71.0  445.772491         103.0         32.0                  32.0            67.0                 -0.001445
+       67    1003    G3  292.064667          94.0 -253.688782          42.0        -52.0                  52.0            81.5                  0.007585
+       68    1002    G3  200.159317          83.0 -312.092957          15.0        -68.0                  68.0            80.0                  0.009210
+       69     993    G3    4.808858          66.0  387.762543          95.0         29.0                  29.0            69.0                 -0.001712
+       70     997    G3   56.247765          68.0  380.552643          94.0         26.0                  26.0            75.5                 -0.002709
+       71     984    G3   -5.491404          64.0  376.273254          92.0         28.0                  28.0            63.5                 -0.000583
+       72    1018    G3  135.698837          76.0 -291.645050          27.0        -49.0                  49.0            90.0                  0.010040
+       73     990    G3   -7.228683          63.0  432.000183          99.0         36.0                  36.0            67.0                 -0.001625
+       74    1014    G3  216.067719          85.0 -280.622009          32.0        -53.0                  53.0            88.0                  0.010123
+       75     995    G3  -13.220197          62.0  376.508209          93.0         31.0                  31.0            73.0                 -0.002691
+       76     990    G3   47.799995          67.0  370.557953          91.0         24.0                  24.0            67.0                 -0.001084
+       77    1009    G3  199.919250          82.0 -255.893372          40.0        -42.0                  42.0            86.5                  0.007585
+       78    1004    G3  176.379227          81.0 -340.450562           4.0        -77.0                  77.0            83.5                  0.012301
+       79     997    G3  164.642776          79.0  513.746033         114.0         35.0                  35.0            75.5                 -0.003646
+       80    1015    G3  269.955597          90.0 -293.439514          23.0        -67.0                  67.0            89.0                  0.013263
+       81     994    G3  166.009262          80.0  450.110046         105.0         25.0                  25.0            71.0                 -0.001823
+       82    1000    G3  224.569092          86.0 -277.380890          33.0        -53.0                  53.0            78.5                  0.006626
+       83     983    G3  -69.409958          54.0  402.952637          96.0         42.0                  42.0            62.0                 -0.000438
+       84     994    G3  107.656593          72.0  419.094055          98.0         26.0                  26.0            71.0                 -0.001896
+       85     982    G3  -30.046951          57.0  403.624817          97.0         40.0                  40.0            61.0                 -0.000139
+       86    1000    G3  127.489998          74.0 -331.431702           7.0        -67.0                  67.0            78.5                  0.008376
+       87    1005    G3  141.060242          77.0 -291.542511          28.0        -49.0                  49.0            85.0                  0.008338
+       88     997    G3  152.834579          78.0  477.586761         109.0         31.0                  31.0            75.5                 -0.003230
+       89     984    G3  133.167755          75.0  434.196777         100.0         25.0                  25.0            63.5                 -0.000521
+       90    9993    G4  309.345184          98.0  472.969788         108.0         10.0                  10.0            99.5                 -0.002709
+       91   10016    G4  443.447388         120.0 -272.556091          35.0        -85.0                  85.0           117.0                  0.033356
+       92   10000    G4  331.447418         104.0 -252.292969          43.0        -61.0                  61.0           105.0                  0.018854
+       93    9993    G4  309.657593         100.0  471.488434         107.0          7.0                   7.0            99.5                 -0.001896
+       94   10011    G4  439.362946         119.0 -322.052948          11.0       -108.0                 108.0           112.5                  0.039006
+       95   10005    G4  374.450317         109.0 -248.490341          47.0        -62.0                  62.0           107.5                  0.020239
+       96   10009    G4  369.645538         108.0 -184.080170          52.0        -56.0                  56.0           111.0                  0.019642
+       97    9989    G4  306.212494          97.0  506.995209         111.0         14.0                  14.0            96.5                 -0.003501
+       98    9996    G4  270.309418          91.0  486.547119         110.0         19.0                  19.0           103.5                 -0.005675
+       99    9988    G4  245.311920          87.0  459.737915         106.0         19.0                  19.0            94.5                 -0.004487
+      100    9995    G4  317.343781         101.0  534.330444         115.0         14.0                  14.0           102.0                 -0.004035
+      101   10015    G4  395.511475         113.0 -255.468384          41.0        -72.0                  72.0           116.0                  0.027755
+      102   10014    G4  427.412598         116.0 -291.758026          26.0        -90.0                  90.0           115.0                  0.034068
+      103    9996    G4  261.070801          89.0  445.919312         104.0         15.0                  15.0           103.5                 -0.004480
+      104   10017    G4  399.743652         114.0 -246.669388          48.0        -66.0                  66.0           118.5                  0.026588
+      105   10007    G4  367.534424         107.0 -217.636093          51.0        -56.0                  56.0           109.5                  0.019059
+      106   10017    G4  412.148407         115.0 -271.958954          36.0        -79.0                  79.0           118.5                  0.031825
+      107   10005    G4  390.872650         111.0 -311.387970          16.0        -95.0                  95.0           107.5                  0.031012
+      108   10003    G4  382.832214         110.0 -228.360062          49.0        -61.0                  61.0           106.0                  0.019277
+      109    9994    G4  309.353027          99.0  553.468079         118.0         19.0                  19.0           101.0                 -0.005345
+      110    9988    G4  284.505402          92.0  512.012390         112.0         20.0                  20.0            94.5                 -0.004723
+      111   10012    G4  293.887512          95.0 -228.349747          50.0        -45.0                  45.0           114.0                  0.016721
+      112   10011    G4  432.438263         117.0 -324.926514          10.0       -107.0                 107.0           112.5                  0.038645
+      113    9985    G4  328.565613         102.0  535.362732         116.0         14.0                  14.0            92.0                 -0.003063
+      114    9983    G4  329.646729         103.0  576.482727         120.0         17.0                  17.0            91.0                 -0.003601
+      115    9987    G4  355.093262         106.0  562.326355         119.0         13.0                  13.0            93.0                 -0.002935
+      116    9989    G4  296.175903          96.0  547.450439         117.0         21.0                  21.0            96.5                 -0.005251
+      117    9990    G4  343.397156         105.0  512.434570         113.0          8.0                   8.0            98.0                 -0.002084
+      118   10007    G4  393.320435         112.0 -290.326111          29.0        -83.0                  83.0           109.5                  0.028248
+      119   10018    G4  437.513275         118.0 -296.848267          21.0        -97.0                  97.0           120.0                  0.040086
+Top 30 absolute PC1 rank changes:
+  point_id  target group     PC1_L27  PC1_rank_L27     PC1_L28  PC1_rank_L28  rank_change  absolute_rank_change  numerical_rank  contribution_to_rho_drop
+       94   10011    G4  439.362946         119.0 -322.052948          11.0       -108.0                 108.0           112.5                  0.039006
+      112   10011    G4  432.438263         117.0 -324.926514          10.0       -107.0                 107.0           112.5                  0.038645
+      119   10018    G4  437.513275         118.0 -296.848267          21.0        -97.0                  97.0           120.0                  0.040086
+      107   10005    G4  390.872650         111.0 -311.387970          16.0        -95.0                  95.0           107.5                  0.031012
+      102   10014    G4  427.412598         116.0 -291.758026          26.0        -90.0                  90.0           115.0                  0.034068
+       91   10016    G4  443.447388         120.0 -272.556091          35.0        -85.0                  85.0           117.0                  0.033356
+      118   10007    G4  393.320435         112.0 -290.326111          29.0        -83.0                  83.0           109.5                  0.028248
+      106   10017    G4  412.148407         115.0 -271.958954          36.0        -79.0                  79.0           118.5                  0.031825
+       78    1004    G3  176.379227          81.0 -340.450562           4.0        -77.0                  77.0            83.5                  0.012301
+       32      89    G2 -378.069092           5.0    7.799664          79.0         74.0                  74.0            40.0                  0.010536
+      101   10015    G4  395.511475         113.0 -255.468384          41.0        -72.0                  72.0           116.0                  0.027755
+       35      86    G2 -378.644165           4.0  -12.390464          75.0         71.0                  71.0            37.5                  0.011342
+        0       8    G1 -382.617371           1.0  -38.749733          70.0         69.0                  69.0             9.0                  0.024681
+       65    1003    G3  258.527496          88.0 -304.289124          19.0        -69.0                  69.0            81.5                  0.010064
+       55      84    G2 -371.859833           6.0  -16.266304          74.0         68.0                  68.0            33.0                  0.012988
+       68    1002    G3  200.159317          83.0 -312.092957          15.0        -68.0                  68.0            80.0                  0.009210
+       80    1015    G3  269.955597          90.0 -293.439514          23.0        -67.0                  67.0            89.0                  0.013263
+       86    1000    G3  127.489998          74.0 -331.431702           7.0        -67.0                  67.0            78.5                  0.008376
+       36      85    G2 -356.282684          12.0    5.713206          78.0         66.0                  66.0            35.0                  0.011689
+       59      85    G2 -356.799683          10.0   -3.733549          76.0         66.0                  66.0            35.0                  0.011689
+      104   10017    G4  399.743652         114.0 -246.669388          48.0        -66.0                  66.0           118.5                  0.026588
+       48      85    G2 -349.862305          14.0   -1.437136          77.0         63.0                  63.0            35.0                  0.011158
+       25      38    G1 -379.337433           3.0  -57.825199          65.0         62.0                  62.0            28.5                  0.013780
+       95   10005    G4  374.450317         109.0 -248.490341          47.0        -62.0                  62.0           107.5                  0.020239
+       92   10000    G4  331.447418         104.0 -252.292969          43.0        -61.0                  61.0           105.0                  0.018854
+      108   10003    G4  382.832214         110.0 -228.360062          49.0        -61.0                  61.0           106.0                  0.019277
+       46      87    G2 -330.867523          21.0   30.315683          81.0         60.0                  60.0            39.0                  0.008960
+       52     103    G2    2.387766          65.0 -337.330109           5.0        -60.0                  60.0            52.0                 -0.003542
+       19      36    G1 -363.982605           7.0  -74.850746          64.0         57.0                  57.0            27.0                  0.013263
+       56      82    G2 -346.718567          16.0  -19.632879          73.0         57.0                  57.0            31.5                  0.011481
+Pair flip breakdown: group_pair  total_pairs  flips  equal_target_pairs  equal_target_flips  concordant_to_discordant  discordant_to_concordant  flip_percent
+     G1-G1          435    321                  11                   6                       103                       212     73.793103
+     G1-G2          900    580                   0                   0                       321                       259     64.444444
+     G1-G3          900    305                   0                   0                       305                         0     33.888889
+     G1-G4          900    355                   0                   0                       355                         0     39.444444
+     G2-G2          435    289                   9                   3                       227                        59     66.436782
+     G2-G3          900    318                   0                   0                       281                        37     35.333333
+     G2-G4          900    318                   0                   0                       318                         0     35.333333
+     G3-G3          435    264                  17                   2                       236                        26     60.689655
+     G3-G4          900    362                   0                   0                       351                        11     40.222222
+     G4-G4          435    327                   8                   5                       287                        35     75.172414
+Largest pair reorganizations:  point_id_A  target_A group_A  point_id_B  target_B group_B group_pair  rank_A_L27  rank_B_L27  rank_A_L28  rank_B_L28  signed_rank_gap_L27  signed_rank_gap_L28  rank_gap_reorganization  same_numerical_target  numerical_concordance_L27  numerical_concordance_L28
+         32        89      G2          94     10011      G4      G2-G4         5.0       119.0        79.0        11.0               -114.0                 68.0                    182.0                  False                          1                         -1
+         32        89      G2         112     10011      G4      G2-G4         5.0       117.0        79.0        10.0               -112.0                 69.0                    181.0                  False                          1                         -1
+         35        86      G2          94     10011      G4      G2-G4         4.0       119.0        75.0        11.0               -115.0                 64.0                    179.0                  False                          1                         -1
+         35        86      G2         112     10011      G4      G2-G4         4.0       117.0        75.0        10.0               -113.0                 65.0                    178.0                  False                          1                         -1
+          0         8      G1          94     10011      G4      G1-G4         1.0       119.0        70.0        11.0               -118.0                 59.0                    177.0                  False                          1                         -1
+          0         8      G1         112     10011      G4      G1-G4         1.0       117.0        70.0        10.0               -116.0                 60.0                    176.0                  False                          1                         -1
+         55        84      G2          94     10011      G4      G2-G4         6.0       119.0        74.0        11.0               -113.0                 63.0                    176.0                  False                          1                         -1
+         55        84      G2         112     10011      G4      G2-G4         6.0       117.0        74.0        10.0               -111.0                 64.0                    175.0                  False                          1                         -1
+         59        85      G2          94     10011      G4      G2-G4        10.0       119.0        76.0        11.0               -109.0                 65.0                    174.0                  False                          1                         -1
+         36        85      G2          94     10011      G4      G2-G4        12.0       119.0        78.0        11.0               -107.0                 67.0                    174.0                  False                          1                         -1
+         36        85      G2         112     10011      G4      G2-G4        12.0       117.0        78.0        10.0               -105.0                 68.0                    173.0                  False                          1                         -1
+         59        85      G2         112     10011      G4      G2-G4        10.0       117.0        76.0        10.0               -107.0                 66.0                    173.0                  False                          1                         -1
+         32        89      G2         119     10018      G4      G2-G4         5.0       118.0        79.0        21.0               -113.0                 58.0                    171.0                  False                          1                         -1
+         48        85      G2          94     10011      G4      G2-G4        14.0       119.0        77.0        11.0               -105.0                 66.0                    171.0                  False                          1                         -1
+         25        38      G1          94     10011      G4      G1-G4         3.0       119.0        65.0        11.0               -116.0                 54.0                    170.0                  False                          1                         -1
+         48        85      G2         112     10011      G4      G2-G4        14.0       117.0        77.0        10.0               -103.0                 67.0                    170.0                  False                          1                         -1
+         25        38      G1         112     10011      G4      G1-G4         3.0       117.0        65.0        10.0               -114.0                 55.0                    169.0                  False                          1                         -1
+         32        89      G2         107     10005      G4      G2-G4         5.0       111.0        79.0        16.0               -106.0                 63.0                    169.0                  False                          1                         -1
+         46        87      G2          94     10011      G4      G2-G4        21.0       119.0        81.0        11.0                -98.0                 70.0                    168.0                  False                          1                         -1
+         35        86      G2         119     10018      G4      G2-G4         4.0       118.0        75.0        21.0               -114.0                 54.0                    168.0                  False                          1                         -1
+TASK 8: graph comparison: {'edges_L27': 336, 'edges_L28': 335, 'intersection': 320, 'union': 351, 'jaccard': 0.9116809116809117, 'fraction_L27_edges_retained': 0.9523809523809523, 'lost_edges': 16, 'gained_edges': 15, 'undirected_node_jaccard': {'mean': 0.9106613756613757, 'median': 1.0, 'min': 0.5, 'max': 1.0}, 'directed_outgoing_node_jaccard': {'mean': 0.9266666666666665, 'median': 1.0, 'min': 0.6, 'max': 1.0}}
+Most changed undirected neighborhoods:
+  point_id  target group  undirected_degree_L27  undirected_degree_L28  undirected_intersection  undirected_union  undirected_jaccard undirected_lost_point_ids undirected_gained_point_ids  directed_outgoing_degree_L27  directed_outgoing_degree_L28  directed_outgoing_intersection  directed_outgoing_union  directed_outgoing_jaccard directed_outgoing_lost_point_ids directed_outgoing_gained_point_ids
+        8       6    G1                      5                      4                        3                 6            0.500000                    [1, 6]                         [3]                             4                             4                               3                        5                        0.6                              [1]                                [3]
+       13       6    G1                      4                      4                        3                 5            0.600000                      [31]                         [3]                             4                             4                               3                        5                        0.6                             [31]                                [3]
+       24      29    G1                      4                      4                        3                 5            0.600000                       [1]                        [18]                             4                             4                               3                        5                        0.6                              [1]                               [18]
+      101   10015    G4                      4                      4                        3                 5            0.600000                     [104]                       [102]                             4                             4                               3                        5                        0.6                            [104]                              [102]
+       99    9988    G4                      4                      4                        3                 5            0.600000                      [93]                        [90]                             4                             4                               3                        5                        0.6                             [93]                               [90]
+       17      39    G1                      4                      4                        3                 5            0.600000                      [25]                        [19]                             4                             4                               3                        5                        0.6                             [25]                               [19]
+       67    1003    G3                      4                      4                        3                 5            0.600000                      [82]                       [105]                             4                             4                               3                        5                        0.6                             [82]                              [105]
+       47     104    G2                      4                      4                        3                 5            0.600000                      [80]                        [74]                             4                             4                               3                        5                        0.6                             [80]                               [74]
+       85     982    G3                      4                      4                        3                 5            0.600000                      [71]                        [66]                             4                             4                               3                        5                        0.6                             [71]                               [66]
+        6       7    G1                      4                      4                        3                 5            0.600000                       [8]                        [11]                             4                             4                               3                        5                        0.6                              [8]                               [11]
+      117    9990    G4                      4                      4                        3                 5            0.600000                     [109]                       [110]                             4                             4                               3                        5                        0.6                            [109]                              [110]
+        2      18    G1                      4                      4                        3                 5            0.600000                       [3]                         [4]                             4                             4                               3                        5                        0.6                              [3]                                [4]
+       49     115    G2                      4                      4                        3                 5            0.600000                      [37]                        [14]                             4                             4                               3                        5                        0.6                             [37]                               [14]
+        1       2    G1                      6                      4                        4                 6            0.666667                   [8, 24]                          []                             4                             4                               4                        4                        1.0                               []                                 []
+        3      16    G1                      7                      8                        6                 9            0.666667                       [2]                     [8, 13]                             4                             4                               4                        4                        1.0                               []                                 []
+      103    9996    G4                      5                      4                        4                 5            0.800000                      [97]                          []                             4                             4                               3                        5                        0.6                             [97]                               [99]
+      110    9988    G4                      4                      5                        4                 5            0.800000                        []                       [117]                             4                             4                               4                        4                        1.0                               []                                 []
+       20      13    G1                      5                      4                        4                 5            0.800000                      [15]                          []                             4                             4                               3                        5                        0.6                             [15]                               [23]
+       90    9993    G4                      4                      5                        4                 5            0.800000                        []                        [99]                             4                             4                               4                        4                        1.0                               []                                 []
+       82    1000    G3                      5                      4                        4                 5            0.800000                      [67]                          []                             4                             4                               4                        4                        1.0                               []                                 []
+TASK 9: orientation: {
+  "component_cosine_matrix_rows_L27_cols_L28": [
+    [
+      0.06801998219949565,
+      -0.9471754494472305
+    ],
+    [
+      0.907583269021254,
+      0.08211687968169668
+    ]
+  ],
+  "component_unsigned_angles_degrees": [
+    [
+      86.09973057092246,
+      18.70622306169509
+    ],
+    [
+      24.826515105673224,
+      85.28974553450718
+    ]
+  ],
+  "PCA_2D_subspace_principal_angles_degrees": [
+    24.57753562927246,
+    17.931386947631836
+  ],
+  "score_correlations_rows_L27_cols_L28": [
+    [
+      {
+        "pearson": 0.08781440532828015,
+        "spearman": -0.02097367872768942
+      },
+      {
+        "pearson": -0.9932733624795819,
+        "spearman": -0.993110632682825
+      }
+    ],
+    [
+      {
+        "pearson": 0.9910751044266,
+        "spearman": 0.9956663657198415
+      },
+      {
+        "pearson": 0.09066783573883178,
+        "spearman": 0.096680325022571
+      }
+    ]
+  ],
+  "pairwise_PCA2_distance_correlations": {
+    "pearson": 0.9862285397539222,
+    "spearman": 0.9845479598267397
+  },
+  "pairwise_4096d_distance_correlations": {
+    "pearson": 0.9850341317151755,
+    "spearman": 0.9774746896154224
+  },
+  "procrustes_disparity": 0.012520639981845452,
+  "procrustes_similarity_1_minus_disparity": 0.9874793600181545,
+  "procrustes_normalized_RMSE": 0.11189566560794682,
+  "z28_to_z27_orthogonal_matrix": [
+    [
+      0.08969182896641267,
+      0.995969565708039
+    ],
+    [
+      -0.995969565708039,
+      0.08969182896641249
+    ]
+  ],
+  "z28_to_z27_scale": 0.8461822038193627,
+  "orthogonal_determinant": 0.9999999999999999,
+  "aligned_axis_correlations": [
+    {
+      "pearson": 0.9971256921556078,
+      "spearman": 0.9968678380443083
+    },
+    {
+      "pearson": 0.9951949692855759,
+      "spearman": 0.9807972775887214
+    }
+  ],
+  "aligned_L28_axis1_target_spearman": 0.9258316502066203,
+  "L28_projected_onto_L27_PC1_target_spearman": 0.9208759803359363,
+  "L27_projected_onto_L28_PC2_target_spearman": -0.9100478243045471,
+  "G2_branch_ARI_between_layers": 1.0,
+  "G3_branch_ARI_between_layers": 1.0,
+  "G4_branch_ARI_between_layers": 1.0
+}
+VALIDATION: metadata, prefix alignment, saved token diagnostics, 480 directed edges/layer, non-self neighbors, independent float64 kNN identity, archived PCA metrics, exact Spearman-drop decomposition: PASS.

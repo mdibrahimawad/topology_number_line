@@ -1,0 +1,357 @@
+{
+  "pca": [
+    {
+      "layer": 27,
+      "explained_variance_PC1": 0.2253999412059784,
+      "explained_variance_PC2": 0.18938231468200684,
+      "Spearman_target_PC1": 0.9195528477355647,
+      "Spearman_target_PC2": 0.1076772950318327,
+      "Pearson_target_PC1": 0.794429880226086,
+      "Pearson_target_PC2": 0.15132769321146883,
+      "Pearson_log10target_PC1": 0.8967032894016032,
+      "Pearson_log10target_PC2": 0.25365241307721054,
+      "archived_rho_abs": 0.9195528477355648,
+      "archived_ev_pc1": 0.2253999263048172
+    },
+    {
+      "layer": 28,
+      "explained_variance_PC1": 0.23485496640205383,
+      "explained_variance_PC2": 0.21062549948692322,
+      "Spearman_target_PC1": 0.10782315216888155,
+      "Spearman_target_PC2": -0.9110132596402515,
+      "Pearson_target_PC1": 0.20369071630984484,
+      "Pearson_target_PC2": -0.7507229367171739,
+      "Pearson_log10target_PC1": 0.31138363795779256,
+      "Pearson_log10target_PC2": -0.8648612353377743,
+      "archived_rho_abs": 0.1078231521688815,
+      "archived_ev_pc1": 0.2348551154136657
+    }
+  ],
+  "graph": {
+    "edges_L27": 336,
+    "edges_L28": 335,
+    "intersection": 320,
+    "union": 351,
+    "jaccard": 0.9116809116809117,
+    "fraction_L27_edges_retained": 0.9523809523809523,
+    "lost_edges": 16,
+    "gained_edges": 15,
+    "undirected_node_jaccard": {
+      "mean": 0.9106613756613757,
+      "median": 1.0,
+      "min": 0.5,
+      "max": 1.0
+    },
+    "directed_outgoing_node_jaccard": {
+      "mean": 0.9266666666666665,
+      "median": 1.0,
+      "min": 0.6,
+      "max": 1.0
+    }
+  },
+  "orientation": {
+    "component_cosine_matrix_rows_L27_cols_L28": [
+      [
+        0.06801998219949565,
+        -0.9471754494472305
+      ],
+      [
+        0.907583269021254,
+        0.08211687968169668
+      ]
+    ],
+    "component_unsigned_angles_degrees": [
+      [
+        86.09973057092246,
+        18.70622306169509
+      ],
+      [
+        24.826515105673224,
+        85.28974553450718
+      ]
+    ],
+    "PCA_2D_subspace_principal_angles_degrees": [
+      24.57753562927246,
+      17.931386947631836
+    ],
+    "score_correlations_rows_L27_cols_L28": [
+      [
+        {
+          "pearson": 0.08781440532828015,
+          "spearman": -0.02097367872768942
+        },
+        {
+          "pearson": -0.9932733624795819,
+          "spearman": -0.993110632682825
+        }
+      ],
+      [
+        {
+          "pearson": 0.9910751044266,
+          "spearman": 0.9956663657198415
+        },
+        {
+          "pearson": 0.09066783573883178,
+          "spearman": 0.096680325022571
+        }
+      ]
+    ],
+    "pairwise_PCA2_distance_correlations": {
+      "pearson": 0.9862285397539222,
+      "spearman": 0.9845479598267397
+    },
+    "pairwise_4096d_distance_correlations": {
+      "pearson": 0.9850341317151755,
+      "spearman": 0.9774746896154224
+    },
+    "procrustes_disparity": 0.012520639981845452,
+    "procrustes_similarity_1_minus_disparity": 0.9874793600181545,
+    "procrustes_normalized_RMSE": 0.11189566560794682,
+    "z28_to_z27_orthogonal_matrix": [
+      [
+        0.08969182896641267,
+        0.995969565708039
+      ],
+      [
+        -0.995969565708039,
+        0.08969182896641249
+      ]
+    ],
+    "z28_to_z27_scale": 0.8461822038193627,
+    "orthogonal_determinant": 0.9999999999999999,
+    "aligned_axis_correlations": [
+      {
+        "pearson": 0.9971256921556078,
+        "spearman": 0.9968678380443083
+      },
+      {
+        "pearson": 0.9951949692855759,
+        "spearman": 0.9807972775887214
+      }
+    ],
+    "aligned_L28_axis1_target_spearman": 0.9258316502066203,
+    "L28_projected_onto_L27_PC1_target_spearman": 0.9208759803359363,
+    "L27_projected_onto_L28_PC2_target_spearman": -0.9100478243045471,
+    "G2_branch_ARI_between_layers": 1.0,
+    "G3_branch_ARI_between_layers": 1.0,
+    "G4_branch_ARI_between_layers": 1.0
+  },
+  "rank_flips": {
+    "total_pairs": 7140,
+    "flips": 3439,
+    "flip_percentage": 48.16526610644258,
+    "within_group_flips": 1201,
+    "between_group_flips": 2238,
+    "ties": {
+      "equal_target_pairs": 45,
+      "PC1_ties_L27": 0,
+      "PC1_ties_L28": 0
+    },
+    "by_group_pair": [
+      {
+        "group_pair": "G1-G1",
+        "total_pairs": 435,
+        "flips": 321,
+        "equal_target_pairs": 11,
+        "equal_target_flips": 6,
+        "concordant_to_discordant": 103,
+        "discordant_to_concordant": 212,
+        "flip_percent": 73.79310344827586
+      },
+      {
+        "group_pair": "G1-G2",
+        "total_pairs": 900,
+        "flips": 580,
+        "equal_target_pairs": 0,
+        "equal_target_flips": 0,
+        "concordant_to_discordant": 321,
+        "discordant_to_concordant": 259,
+        "flip_percent": 64.44444444444444
+      },
+      {
+        "group_pair": "G1-G3",
+        "total_pairs": 900,
+        "flips": 305,
+        "equal_target_pairs": 0,
+        "equal_target_flips": 0,
+        "concordant_to_discordant": 305,
+        "discordant_to_concordant": 0,
+        "flip_percent": 33.888888888888886
+      },
+      {
+        "group_pair": "G1-G4",
+        "total_pairs": 900,
+        "flips": 355,
+        "equal_target_pairs": 0,
+        "equal_target_flips": 0,
+        "concordant_to_discordant": 355,
+        "discordant_to_concordant": 0,
+        "flip_percent": 39.44444444444444
+      },
+      {
+        "group_pair": "G2-G2",
+        "total_pairs": 435,
+        "flips": 289,
+        "equal_target_pairs": 9,
+        "equal_target_flips": 3,
+        "concordant_to_discordant": 227,
+        "discordant_to_concordant": 59,
+        "flip_percent": 66.4367816091954
+      },
+      {
+        "group_pair": "G2-G3",
+        "total_pairs": 900,
+        "flips": 318,
+        "equal_target_pairs": 0,
+        "equal_target_flips": 0,
+        "concordant_to_discordant": 281,
+        "discordant_to_concordant": 37,
+        "flip_percent": 35.333333333333336
+      },
+      {
+        "group_pair": "G2-G4",
+        "total_pairs": 900,
+        "flips": 318,
+        "equal_target_pairs": 0,
+        "equal_target_flips": 0,
+        "concordant_to_discordant": 318,
+        "discordant_to_concordant": 0,
+        "flip_percent": 35.333333333333336
+      },
+      {
+        "group_pair": "G3-G3",
+        "total_pairs": 435,
+        "flips": 264,
+        "equal_target_pairs": 17,
+        "equal_target_flips": 2,
+        "concordant_to_discordant": 236,
+        "discordant_to_concordant": 26,
+        "flip_percent": 60.689655172413794
+      },
+      {
+        "group_pair": "G3-G4",
+        "total_pairs": 900,
+        "flips": 362,
+        "equal_target_pairs": 0,
+        "equal_target_flips": 0,
+        "concordant_to_discordant": 351,
+        "discordant_to_concordant": 11,
+        "flip_percent": 40.22222222222222
+      },
+      {
+        "group_pair": "G4-G4",
+        "total_pairs": 435,
+        "flips": 327,
+        "equal_target_pairs": 8,
+        "equal_target_flips": 5,
+        "concordant_to_discordant": 287,
+        "discordant_to_concordant": 35,
+        "flip_percent": 75.17241379310344
+      }
+    ]
+  },
+  "cross_group_distances": [
+    {
+      "layer": 27,
+      "group_pair": "G1-G2",
+      "edge_count": 12,
+      "euclidean_distance_4096d_mean": 567.7950968198685,
+      "euclidean_distance_4096d_median": 528.5414072587163,
+      "euclidean_distance_4096d_min": 478.34772129993405,
+      "euclidean_distance_4096d_max": 898.514224530505,
+      "euclidean_distance_PCA2_mean": 93.02367268820002,
+      "euclidean_distance_PCA2_median": 88.00797903624314,
+      "euclidean_distance_PCA2_min": 14.558023499995835,
+      "euclidean_distance_PCA2_max": 200.4231700084479,
+      "distance_4096d_to_PCA2_ratio_mean": 9.498129919436044,
+      "distance_4096d_to_PCA2_ratio_median": 6.068665725785246,
+      "distance_4096d_to_PCA2_ratio_min": 3.5433142592423508,
+      "distance_4096d_to_PCA2_ratio_max": 33.28507459343506
+    },
+    {
+      "layer": 27,
+      "group_pair": "G2-G3",
+      "edge_count": 2,
+      "euclidean_distance_4096d_mean": 700.2481603347201,
+      "euclidean_distance_4096d_median": 700.2481603347201,
+      "euclidean_distance_4096d_min": 646.117154644055,
+      "euclidean_distance_4096d_max": 754.3791660253853,
+      "euclidean_distance_PCA2_mean": 148.63010281658882,
+      "euclidean_distance_PCA2_median": 148.63010281658882,
+      "euclidean_distance_PCA2_min": 143.63049078177914,
+      "euclidean_distance_PCA2_max": 153.62971485139846,
+      "distance_4096d_to_PCA2_ratio_mean": 4.704420335404674,
+      "distance_4096d_to_PCA2_ratio_median": 4.704420335404674,
+      "distance_4096d_to_PCA2_ratio_min": 4.498467916716336,
+      "distance_4096d_to_PCA2_ratio_max": 4.91037275409301
+    },
+    {
+      "layer": 27,
+      "group_pair": "G3-G4",
+      "edge_count": 6,
+      "euclidean_distance_4096d_mean": 483.1996050241608,
+      "euclidean_distance_4096d_median": 492.61990372441437,
+      "euclidean_distance_4096d_min": 429.46310038702967,
+      "euclidean_distance_4096d_max": 513.0807541854998,
+      "euclidean_distance_PCA2_mean": 120.30712378647256,
+      "euclidean_distance_PCA2_median": 110.13908829186897,
+      "euclidean_distance_PCA2_min": 92.22793268838882,
+      "euclidean_distance_PCA2_max": 167.82304961142455,
+      "distance_4096d_to_PCA2_ratio_mean": 4.188391998749011,
+      "distance_4096d_to_PCA2_ratio_median": 4.303185412622285,
+      "distance_4096d_to_PCA2_ratio_min": 2.5590233366715913,
+      "distance_4096d_to_PCA2_ratio_max": 5.441098463713601
+    },
+    {
+      "layer": 28,
+      "group_pair": "G1-G2",
+      "edge_count": 12,
+      "euclidean_distance_4096d_mean": 593.306046535675,
+      "euclidean_distance_4096d_median": 564.9080015225383,
+      "euclidean_distance_4096d_min": 514.0339179221679,
+      "euclidean_distance_4096d_max": 992.8351889424265,
+      "euclidean_distance_PCA2_mean": 98.05357645057553,
+      "euclidean_distance_PCA2_median": 71.0034041254819,
+      "euclidean_distance_PCA2_min": 27.437151580738117,
+      "euclidean_distance_PCA2_max": 322.0204667766445,
+      "distance_4096d_to_PCA2_ratio_mean": 9.798436498302374,
+      "distance_4096d_to_PCA2_ratio_median": 8.13962343161,
+      "distance_4096d_to_PCA2_ratio_min": 3.0831431271449694,
+      "distance_4096d_to_PCA2_ratio_max": 20.766280776549944
+    },
+    {
+      "layer": 28,
+      "group_pair": "G2-G3",
+      "edge_count": 3,
+      "euclidean_distance_4096d_mean": 679.5831878214605,
+      "euclidean_distance_4096d_median": 705.3477280201931,
+      "euclidean_distance_4096d_min": 502.7014683119405,
+      "euclidean_distance_4096d_max": 830.7003671322478,
+      "euclidean_distance_PCA2_mean": 139.9708761753832,
+      "euclidean_distance_PCA2_median": 142.0311677153223,
+      "euclidean_distance_PCA2_min": 98.62593221167322,
+      "euclidean_distance_PCA2_max": 179.25552859915408,
+      "distance_4096d_to_PCA2_ratio_mean": 5.397756677162772,
+      "distance_4096d_to_PCA2_ratio_median": 4.966147496822279,
+      "distance_4096d_to_PCA2_ratio_min": 2.8043847363618375,
+      "distance_4096d_to_PCA2_ratio_max": 8.422737798304201
+    },
+    {
+      "layer": 28,
+      "group_pair": "G3-G4",
+      "edge_count": 7,
+      "euclidean_distance_4096d_mean": 522.5859369329688,
+      "euclidean_distance_4096d_median": 533.375260148746,
+      "euclidean_distance_4096d_min": 459.39297635360344,
+      "euclidean_distance_4096d_max": 564.6811517651001,
+      "euclidean_distance_PCA2_mean": 108.94207516156384,
+      "euclidean_distance_PCA2_median": 103.83577416827397,
+      "euclidean_distance_PCA2_min": 73.5454408474742,
+      "euclidean_distance_PCA2_max": 160.2795479624262,
+      "distance_4096d_to_PCA2_ratio_mean": 5.122771100379794,
+      "distance_4096d_to_PCA2_ratio_median": 4.953398338811413,
+      "distance_4096d_to_PCA2_ratio_min": 2.8661983527760975,
+      "distance_4096d_to_PCA2_ratio_max": 7.310287976094594
+    }
+  ]
+}

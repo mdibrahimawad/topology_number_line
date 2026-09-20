@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "checks": [
+    "Exact positional metadata alignment for all 120 points",
+    "Archived PCA rho and explained variance reproduced",
+    "Four non-self directed neighbors per point and layer",
+    "Independent float64 Euclidean calculation matches all ranked neighbors",
+    "CSV directed/undirected edge sets agree",
+    "PCA2 projected distances do not exceed original-space distances",
+    "All group SVGs contain every required point label",
+    "Communicator degree sums equal twice cross-group edge counts",
+    "Exported rank changes and pair flips reconcile",
+    "Point contributions sum to the exact Spearman drop",
+    "All 120 contextual token-prefix checks pass",
+    "All 12 original tokenizer diagnostics match",
+    "Observed digit, binary boundary and token-length confounding verified",
+    "All local report links resolve",
+    "Original NPZ and metadata hashes unchanged"
+  ],
+  "csv_files": 27,
+  "png_figures": 11,
+  "svg_figures": 11
+}

@@ -1,0 +1,269 @@
+{
+  "note": "Authored post-hoc programs copied without scientific edits from the completed local workspace. Generated outputs and third-party sources are excluded.",
+  "files": [
+    {
+      "path": "posthoc/work/build_ph_report.py",
+      "sha256": "afecbc8531bd44aa80ccb4fda736c6b39555d50b581f093a8faefc94c620008d"
+    },
+    {
+      "path": "posthoc/work/centroid_top4.py",
+      "sha256": "9574d85d2a6d1ee0aff35df78e1f4f5af494fcb3f8ab6a95247eb138740e55b8"
+    },
+    {
+      "path": "posthoc/work/check_crystal_gate.py",
+      "sha256": "335534cacdf9dabde1f08546b0b5075e33a92b312c88acebdc7a46f387afeacb"
+    },
+    {
+      "path": "posthoc/work/check_digit_centroids.py",
+      "sha256": "5c876cb2b8c6c9e1f90a92f73dbdba2bc9352c90ff9c04fe416c993f1fd2b4c9"
+    },
+    {
+      "path": "posthoc/work/check_final_layer_change.py",
+      "sha256": "cf2fcdab822d7c9bd0d8fe946ab56068d5f1defc3f21c637f054a0eb5eb7c9a0"
+    },
+    {
+      "path": "posthoc/work/download_ph_direct.py",
+      "sha256": "b3cdf4be1a6c51897e2fdf1beeed96aa94b148d293ffb41c80c751c2f38f1d79"
+    },
+    {
+      "path": "posthoc/work/download_ph_pilot.py",
+      "sha256": "751b5305bdb59f49cc1846185d5feff501012e860bfedb71be684514c7060145"
+    },
+    {
+      "path": "posthoc/work/download_ph_saved.py",
+      "sha256": "fbf486212d0e6d830ccbd6adf7c1c34c60120e9ff56e40a717e14a01255b07cd"
+    },
+    {
+      "path": "posthoc/work/geometric_shapes/benchmark_cached.py",
+      "sha256": "07b7acd09cab2b2e6e859cf9395f71eb6ccc3b4e9b7f3ae8781d21cca751f736"
+    },
+    {
+      "path": "posthoc/work/geometric_shapes/controls.py",
+      "sha256": "6eba3cf683794c545b6f9ca6826d43d2faa119257f2f225c6a8b57e53cc02406"
+    },
+    {
+      "path": "posthoc/work/geometric_shapes/fit.py",
+      "sha256": "b582738d81f1b4c872a28abf792d6f76c158985d5279fdb657ba3e7d9b46cba1"
+    },
+    {
+      "path": "posthoc/work/geometric_shapes/gallery.py",
+      "sha256": "eb274bfc8fac0aba5b271d96ba4b2dfbc9a285886694af086ebc818c2abf47e1"
+    },
+    {
+      "path": "posthoc/work/geometric_shapes/inventory.py",
+      "sha256": "8c516ddd8ef9b0f9e521be769d90f0efb53aad567e6981e751a1a1eaf00a2774"
+    },
+    {
+      "path": "posthoc/work/geometric_shapes/report.py",
+      "sha256": "04f3f073d4a67f5cc17db7e90804b80082feab03cc6aa74ba06b1be48afc12f6"
+    },
+    {
+      "path": "posthoc/work/geometric_shapes/run.py",
+      "sha256": "c4f9509988083d8940eb3f67b8b839a8f04f53186ef69223da40e5a3a9052d57"
+    },
+    {
+      "path": "posthoc/work/geometric_shapes/templates.py",
+      "sha256": "4cd001d31b70f0f3cdef08304b59c2cb97f54ac92287595a359c5e73161bc31b"
+    },
+    {
+      "path": "posthoc/work/geometric_shapes/test_fit.py",
+      "sha256": "3690afb206a16a41180e8d48df3981d5e1b22db459ee775d678d478477944bcd"
+    },
+    {
+      "path": "posthoc/work/geometric_shapes/test_templates.py",
+      "sha256": "f578a9f488275977e243a8e30501b6ee259ce69a916465ffc57ef1ced4f32cff"
+    },
+    {
+      "path": "posthoc/work/geometric_shapes/validate.py",
+      "sha256": "36f3434146313db05a3b8c8fb708cce23474d9348849b44e2740f9526334c878"
+    },
+    {
+      "path": "posthoc/work/geometric_shapes/viewer_check.js",
+      "sha256": "259014c721c2307bf5cadb3d1f85f31ddeb919d5573d4b05b0ada9f20d386946"
+    },
+    {
+      "path": "posthoc/work/pca3d/benchmark.py",
+      "sha256": "659c3bb8f8fa2d793e736cbd57a04a2af0764465156fad2a37e512219ec4bd57"
+    },
+    {
+      "path": "posthoc/work/pca3d/build.py",
+      "sha256": "93975ce3c1c6f745d9dddde1043203fcebcbd402ab35659240c1ed16f1485096"
+    },
+    {
+      "path": "posthoc/work/pca3d/validate.py",
+      "sha256": "3a9b4792c96a9ce95ed36807de7ab4cf0ee969be4de6ba219d5c2a696aeba97f"
+    },
+    {
+      "path": "posthoc/work/pca3d_analysis/analyze.py",
+      "sha256": "a461995af3344559fb0e71e845f3afb5b50e3234747d97bce6431fb00f48221b"
+    },
+    {
+      "path": "posthoc/work/pca3d_analysis/digits.py",
+      "sha256": "99e57d98685fe1c9ab3f36ab089500ab1015a2be9dbff07faf9a37a9c41d942a"
+    },
+    {
+      "path": "posthoc/work/pca3d_analysis/generalized.py",
+      "sha256": "10c5f41a40a5505e2ab3a1883b4e3f812267eb7d553f7cafd7b67850e98d3a12"
+    },
+    {
+      "path": "posthoc/work/pca3d_analysis/hidden_digits.py",
+      "sha256": "b919c1cee9317e2894cb0201b109bf6631ad35cf2935262811b0c8586044fb08"
+    },
+    {
+      "path": "posthoc/work/pca3d_analysis/plots.py",
+      "sha256": "4cd7a20a2b50a40868df922bd77ae032c792fc9d4f4a000be2ff3b79e74b9e30"
+    },
+    {
+      "path": "posthoc/work/pca3d_analysis/report.py",
+      "sha256": "0b3bb70c25a8156ac7d3dd3eb63e50bdccce0a7138ed9b15929becda8b63f381"
+    },
+    {
+      "path": "posthoc/work/pca3d_analysis/summary_plots.py",
+      "sha256": "df5cf85488ae620cd446fa1862c88730e9eef5908512257ef965041e3ff8a34b"
+    },
+    {
+      "path": "posthoc/work/pca3d_analysis/validate.py",
+      "sha256": "83c015907fb284075bc8fe2dd444a363835bfbc91da8741b59786b4c76b5e1cd"
+    },
+    {
+      "path": "posthoc/work/ph_additional_checks.py",
+      "sha256": "8e2311af7b4cd59eacbb257b4c9f3aba6cf11a22d76a103f4f13ba6a2487d347"
+    },
+    {
+      "path": "posthoc/work/ph_analysis.py",
+      "sha256": "7bbd44b37b22be4f136f8c49e22776f10bf68e953c04e95397700da1e9c3b602"
+    },
+    {
+      "path": "posthoc/work/ph_audit_facts.py",
+      "sha256": "c3becae6a0a297d257a092cdb0e3bab32872b5b4dca45da23fc71b6309a367b9"
+    },
+    {
+      "path": "posthoc/work/ph_audit_star_embedding_quotient.py",
+      "sha256": "d6ef2b7e9e460c2164a891cac10a2bc81b655837fd220e3bcabc22284f13e5c9"
+    },
+    {
+      "path": "posthoc/work/ph_backend_benchmark.py",
+      "sha256": "c7d7b65b6ae5e27d260a16999c7b11bfd8c1ef03707d88782bbc6337ad022e5d"
+    },
+    {
+      "path": "posthoc/work/ph_compare.py",
+      "sha256": "cec1ee79c1b84e0e4b921296334de1bf3aeb2b7e8544b8816ee4d92b9da421a1"
+    },
+    {
+      "path": "posthoc/work/ph_gallery.py",
+      "sha256": "b72af20d34fa902e7988e6e6607c2e1ed7bad7d4360aea9b300231a9f578837c"
+    },
+    {
+      "path": "posthoc/work/ph_h0_groups.py",
+      "sha256": "569cd84030cbb7834e5499a08ce7e29418af3f2fbb141d076c2a0b7a9d316503"
+    },
+    {
+      "path": "posthoc/work/plot_digit_centroids.py",
+      "sha256": "fa8dac28a3d97c60eb5c4bf91adfde48df519dd875004dd3f5e832a19165e308"
+    },
+    {
+      "path": "posthoc/work/publish_ph_acceleration.py",
+      "sha256": "470166cecbffd11a8be9852fb33ac9d470cdc997ad7dddb54f2824294af06dcd"
+    },
+    {
+      "path": "posthoc/work/taskrules/__init__.py",
+      "sha256": "f917b00626e0b6f9be756d822defba5b591de94bb289a3093c0620d0f4181959"
+    },
+    {
+      "path": "posthoc/work/taskrules/download_results.py",
+      "sha256": "5b33921ba03a64ef70231ce95663d19a7495ac4e699cdc21ca15149510c500b3"
+    },
+    {
+      "path": "posthoc/work/taskrules/modal_taskrules.py",
+      "sha256": "2820bde4536671bea9360417071f5ba165a9fa6a615d67c8694f35303c1f14f5"
+    },
+    {
+      "path": "posthoc/work/taskrules/rescore_pilot.py",
+      "sha256": "dcb65f0f85463e51af0100374d50bb0ef2ee2d269d75ff9e6c872d817e729316"
+    },
+    {
+      "path": "posthoc/work/taskrules/runtime.py",
+      "sha256": "9032a59207cc26bdc278396440523b65c26339012bf9d74a0155b1efc7d0ea25"
+    },
+    {
+      "path": "posthoc/work/taskrules/validate_gallery.py",
+      "sha256": "9e0ba9e3fef88447d6f2b939cd07a071cf98350426ae55e656df54919bdd9350"
+    },
+    {
+      "path": "posthoc/work/taskrules_analysis/analyze.py",
+      "sha256": "ce54deba111d277cb4525ec4ce0a9f888801f1f97ffb456b841cbfba2561d6ca"
+    },
+    {
+      "path": "posthoc/work/taskrules_analysis/gallery.py",
+      "sha256": "a97cc18d327a75e34c8fdef422580534fcfe062485933b129259333705614187"
+    },
+    {
+      "path": "posthoc/work/taskrules_analysis/gallery_check.js",
+      "sha256": "dd731be48fca5bf7cfa4297505dd0ff312ab09090438271964571a949c8be41b"
+    },
+    {
+      "path": "posthoc/work/taskrules_analysis/test_taskrules_analyze.py",
+      "sha256": "3e40aade165affeaebb7f6f89ffcaadc53822cd2d455d873fa6989713f67d240"
+    },
+    {
+      "path": "posthoc/work/taskrules_analysis/test_taskrules_gallery.py",
+      "sha256": "a488ce4994eb56f27d2f94000f1184dd2d1450b74ec90b6a50c050bb3a7c3dc8"
+    },
+    {
+      "path": "posthoc/work/taskrules_data/audit.py",
+      "sha256": "e423d402f13f021cdc466a250e4c5af2498e10a3d0e8c635f8f4934c2bf036b5"
+    },
+    {
+      "path": "posthoc/work/taskrules_data/audit_fast.py",
+      "sha256": "9f65c6bbe7d72ee06e68d3c2b1b5145ad7d765b258b0630c57663bd1df36448e"
+    },
+    {
+      "path": "posthoc/work/taskrules_data/compare.py",
+      "sha256": "c8dfcef300122b7a200c5c74cb7cf1931f36564ec510b34eeea9b5b5b7f6e5d7"
+    },
+    {
+      "path": "posthoc/work/taskrules_data/data.py",
+      "sha256": "eaf3e936e8464e05c5cc3a4e86c49e81f14b0c99a8d8ef3fb50fd7c78efca775"
+    },
+    {
+      "path": "posthoc/work/taskrules_data/test_audit_fast.py",
+      "sha256": "de3de58cecd1587343c7cdf7f500b35150104b69875e0f1f7beace3830062769"
+    },
+    {
+      "path": "posthoc/work/taskrules_data/test_taskrules_data.py",
+      "sha256": "7e5b4343285831218a1d3229c447fb69e126cafa944cbc81e0a4a22cd6657872"
+    },
+    {
+      "path": "posthoc/work/taskrules_export/export.py",
+      "sha256": "153dc3fe121587a7fe4f156e089c5508450bb7678f5a66da17cadc3dd1a71fbc"
+    },
+    {
+      "path": "posthoc/work/taskrules_export/test_export.py",
+      "sha256": "9a9114d05cd3d39f500650e30e8f8d86c75b6669a3c526f474d3a6ace072ff66"
+    },
+    {
+      "path": "posthoc/work/taskrules_extract/adopt.py",
+      "sha256": "1149f6560bc3ced3ab49790583daf509b7eea0d7f2abd026d2a01087ca2426e6"
+    },
+    {
+      "path": "posthoc/work/taskrules_extract/extract.py",
+      "sha256": "16ff0de89bd68f5d1f3a73f79c6d32fcfe8697d49bc886906eb59b58d86fc824"
+    },
+    {
+      "path": "posthoc/work/taskrules_extract/test_taskrules_adopt.py",
+      "sha256": "ae32fd4f2f6570ec778004c844934817084ef21bcdf84628bd739ab67d1af4f5"
+    },
+    {
+      "path": "posthoc/work/taskrules_extract/test_taskrules_extract.py",
+      "sha256": "43f4c7628a51e4ced31162087787f421cd8e776b197f1ba6ec2d460db1cfe48b"
+    },
+    {
+      "path": "posthoc/work/validate_ph_direct.py",
+      "sha256": "9becd99655a0acde7f055024d283a2387abb9044aa1ec363580f910579278ed8"
+    },
+    {
+      "path": "posthoc/work/validate_ph_h0.py",
+      "sha256": "453696d7d1989828f789228a3ea77c6d5980ec2d25d5d27cc02fcbedb33c8764"
+    }
+  ]
+}

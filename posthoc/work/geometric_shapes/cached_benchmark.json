@@ -1,0 +1,19 @@
+{
+  "records": [
+    {
+      "id": "original_crystal_L07",
+      "baseline_seconds": 6.100378749979427,
+      "cached_seconds": 4.148041500011459,
+      "speedup": 1.4706648306104397,
+      "all_outputs_exactly_equal": true
+    },
+    {
+      "id": "new_crystal_word_copy_ctx0_L32",
+      "baseline_seconds": 5.320335625001462,
+      "cached_seconds": 3.5925275000045076,
+      "speedup": 1.4809449962442283,
+      "all_outputs_exactly_equal": true
+    }
+  ],
+  "synthetics_passed": true
+}
