@@ -1,0 +1,55 @@
+{
+  "source": "modal numberline-zigzag-results:/crystal_fullrange_1_10000_ctx1234_k4_seed42/hidden",
+  "layers": [
+    8,
+    16,
+    24,
+    27,
+    32
+  ],
+  "point_order": "target 1..10000",
+  "centred": true,
+  "dtype": "float16",
+  "checks": {
+    "8": {
+      "shape": [
+        10000,
+        4096
+      ],
+      "max_rel_distance_error": 2.2435293431044556e-05,
+      "file_mb": 75.7
+    },
+    "16": {
+      "shape": [
+        10000,
+        4096
+      ],
+      "max_rel_distance_error": 2.0987812604289502e-05,
+      "file_mb": 75.7
+    },
+    "24": {
+      "shape": [
+        10000,
+        4096
+      ],
+      "max_rel_distance_error": 2.5595456463634036e-05,
+      "file_mb": 75.7
+    },
+    "27": {
+      "shape": [
+        10000,
+        4096
+      ],
+      "max_rel_distance_error": 2.464235876686871e-05,
+      "file_mb": 75.7
+    },
+    "32": {
+      "shape": [
+        10000,
+        4096
+      ],
+      "max_rel_distance_error": 0.00022064447693992406,
+      "file_mb": 75.9
+    }
+  }
+}
