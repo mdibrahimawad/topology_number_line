@@ -1,0 +1,56 @@
+{
+  "levels": 27,
+  "width": 3200,
+  "layers": [
+    7,
+    13,
+    20,
+    22,
+    26
+  ],
+  "point_order": "target 1..10000",
+  "centred": true,
+  "dtype": "float16",
+  "checks": {
+    "7": {
+      "shape": [
+        10000,
+        3200
+      ],
+      "max_rel_distance_error": 2.208512341894675e-05,
+      "file_mb": 59.1
+    },
+    "13": {
+      "shape": [
+        10000,
+        3200
+      ],
+      "max_rel_distance_error": 1.723306741041597e-05,
+      "file_mb": 59.1
+    },
+    "20": {
+      "shape": [
+        10000,
+        3200
+      ],
+      "max_rel_distance_error": 3.372816718183458e-05,
+      "file_mb": 59.1
+    },
+    "22": {
+      "shape": [
+        10000,
+        3200
+      ],
+      "max_rel_distance_error": 3.17920494126156e-05,
+      "file_mb": 59.1
+    },
+    "26": {
+      "shape": [
+        10000,
+        3200
+      ],
+      "max_rel_distance_error": 2.8072801796952263e-05,
+      "file_mb": 59.1
+    }
+  }
+}
