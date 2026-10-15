@@ -1,0 +1,44 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B",
+  "revision": null,
+  "name": "qwen2.5-1.5b",
+  "n_layers": 28,
+  "width": 1536,
+  "levels": [
+    7,
+    14,
+    21,
+    24,
+    28
+  ],
+  "fractions": [
+    0.25,
+    0.5,
+    0.75,
+    0.84375,
+    1.0
+  ],
+  "dtype": "float32",
+  "device": "mps",
+  "minutes": 4.4,
+  "last_token_ends_with_eq": 1.0,
+  "batched_vs_single_max_rel_diff": 4.391461516206618e-06,
+  "target_token_counts_7_42_137_1987_5371_9999": [
+    1,
+    2,
+    3,
+    4,
+    4,
+    4
+  ],
+  "file_mb": {
+    "7": 28.4,
+    "14": 28.4,
+    "21": 28.4,
+    "24": 28.5,
+    "28": 28.5
+  },
+  "prompts": "tokenization.json.gz",
+  "centred": true,
+  "stored": "float16"
+}
