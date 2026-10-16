@@ -1,0 +1,82 @@
+[
+  {
+    "revision": "step0",
+    "copy_logprob": -18.005223038991293,
+    "copy_acc": 0.0
+  },
+  {
+    "revision": "step64",
+    "copy_logprob": -16.679689468542733,
+    "copy_acc": 0.0033333333333333335
+  },
+  {
+    "revision": "step256",
+    "copy_logprob": -11.233884948094685,
+    "copy_acc": 0.006666666666666667
+  },
+  {
+    "revision": "step512",
+    "copy_logprob": -8.907146133581797,
+    "copy_acc": 0.016666666666666666
+  },
+  {
+    "revision": "step1000",
+    "copy_logprob": -6.992572162151337,
+    "copy_acc": 0.01
+  },
+  {
+    "revision": "step2000",
+    "copy_logprob": -5.266418379147847,
+    "copy_acc": 0.11666666666666667
+  },
+  {
+    "revision": "step4000",
+    "copy_logprob": -2.070518356561661,
+    "copy_acc": 0.7766666666666666
+  },
+  {
+    "revision": "step8000",
+    "copy_logprob": -0.8124080725759267,
+    "copy_acc": 0.9333333333333333
+  },
+  {
+    "revision": "step13000",
+    "copy_logprob": -0.31359292633831504,
+    "copy_acc": 0.9966666666666667
+  },
+  {
+    "revision": "step23000",
+    "copy_logprob": -0.11172696761786938,
+    "copy_acc": 1.0
+  },
+  {
+    "revision": "step33000",
+    "copy_logprob": -0.15569246514389912,
+    "copy_acc": 1.0
+  },
+  {
+    "revision": "step53000",
+    "copy_logprob": -0.13644319985682765,
+    "copy_acc": 1.0
+  },
+  {
+    "revision": "step73000",
+    "copy_logprob": -0.11269087690704813,
+    "copy_acc": 0.9933333333333333
+  },
+  {
+    "revision": "step103000",
+    "copy_logprob": -0.08695886423345656,
+    "copy_acc": 1.0
+  },
+  {
+    "revision": "step123000",
+    "copy_logprob": -0.0688157502701506,
+    "copy_acc": 1.0
+  },
+  {
+    "revision": "step143000",
+    "copy_logprob": -0.08039393256418408,
+    "copy_acc": 1.0
+  }
+]

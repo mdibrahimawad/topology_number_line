@@ -1,0 +1,14 @@
+{
+  "model": "allenai/OLMo-2-0425-1B",
+  "revision": "stage1-step140000-tokens294B",
+  "copy_logprob": -0.49102307729423045,
+  "copy_first_token_acc": 0.9966666666666667,
+  "minutes": 5.79,
+  "levels": [
+    4,
+    8,
+    12,
+    14,
+    16
+  ]
+}

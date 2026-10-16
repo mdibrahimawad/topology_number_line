@@ -1,0 +1,14 @@
+{
+  "model": "EleutherAI/pythia-1.4b",
+  "revision": "step123000",
+  "copy_logprob": -0.0688157502701506,
+  "copy_first_token_acc": 1.0,
+  "minutes": 2.37,
+  "levels": [
+    6,
+    12,
+    18,
+    20,
+    24
+  ]
+}

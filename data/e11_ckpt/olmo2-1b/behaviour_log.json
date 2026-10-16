@@ -1,0 +1,62 @@
+[
+  {
+    "revision": "stage1-step0-tokens0B",
+    "copy_logprob": -19.87666303316752,
+    "copy_acc": 0.0
+  },
+  {
+    "revision": "stage1-step300-tokens1B",
+    "copy_logprob": -13.893105227947235,
+    "copy_acc": 0.0
+  },
+  {
+    "revision": "stage1-step10000-tokens21B",
+    "copy_logprob": -1.597123382339875,
+    "copy_acc": 0.8433333333333334
+  },
+  {
+    "revision": "stage1-step20000-tokens42B",
+    "copy_logprob": -0.7739392167826493,
+    "copy_acc": 0.9866666666666667
+  },
+  {
+    "revision": "stage1-step40000-tokens84B",
+    "copy_logprob": -0.30034633005658784,
+    "copy_acc": 1.0
+  },
+  {
+    "revision": "stage1-step70000-tokens147B",
+    "copy_logprob": -0.7605918172498544,
+    "copy_acc": 0.9966666666666667
+  },
+  {
+    "revision": "stage1-step140000-tokens294B",
+    "copy_logprob": -0.49102307729423045,
+    "copy_acc": 0.9966666666666667
+  },
+  {
+    "revision": "stage1-step250000-tokens525B",
+    "copy_logprob": -0.34195594330007834,
+    "copy_acc": 1.0
+  },
+  {
+    "revision": "stage1-step420000-tokens881B",
+    "copy_logprob": -0.43595629422614973,
+    "copy_acc": 0.9966666666666667
+  },
+  {
+    "revision": "stage1-step710000-tokens1489B",
+    "copy_logprob": -0.5178782016287248,
+    "copy_acc": 0.9966666666666667
+  },
+  {
+    "revision": "stage1-step1170000-tokens2454B",
+    "copy_logprob": -0.48284620334704714,
+    "copy_acc": 0.9833333333333333
+  },
+  {
+    "revision": "stage1-step1907359-tokens4001B",
+    "copy_logprob": -0.7369509258369604,
+    "copy_acc": 0.9866666666666667
+  }
+]
