@@ -1,0 +1,44 @@
+{
+  "model": "unsloth/Llama-3.2-1B",
+  "revision": null,
+  "name": "llama3.2-1b",
+  "n_layers": 16,
+  "width": 2048,
+  "levels": [
+    4,
+    8,
+    12,
+    14,
+    16
+  ],
+  "fractions": [
+    0.25,
+    0.5,
+    0.75,
+    0.84375,
+    1.0
+  ],
+  "dtype": "float32",
+  "device": "mps",
+  "minutes": 2.5,
+  "last_token_ends_with_eq": 1.0,
+  "batched_vs_single_max_rel_diff": 5.067785878054565e-06,
+  "target_token_counts_7_42_137_1987_5371_9999": [
+    1,
+    1,
+    1,
+    2,
+    2,
+    2
+  ],
+  "file_mb": {
+    "4": 37.8,
+    "8": 37.9,
+    "12": 37.9,
+    "14": 37.8,
+    "16": 37.8
+  },
+  "prompts": "tokenization.json.gz",
+  "centred": true,
+  "stored": "float16"
+}

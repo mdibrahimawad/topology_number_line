@@ -1,0 +1,25 @@
+{
+  "results": {
+    "togethercomputer/RedPajama-INCITE-Base-3B-v1": {
+      "same_as": "EleutherAI/pythia-1.4b",
+      "n_different": 0,
+      "examples": []
+    }
+  },
+  "examples": {
+    "EleutherAI/pythia-1.4b": {
+      "1987": "1987",
+      "5371": "5|371",
+      "9999": "9999",
+      "2048": "20|48",
+      "1000": "1000"
+    },
+    "togethercomputer/RedPajama-INCITE-Base-3B-v1": {
+      "1987": "1987",
+      "5371": "5|371",
+      "9999": "9999",
+      "2048": "20|48",
+      "1000": "1000"
+    }
+  }
+}
